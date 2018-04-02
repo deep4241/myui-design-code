@@ -1,0 +1,52 @@
+// Scale transition
+.scale-transition {
+  &.scale-out {
+    transform: scale(0);
+    transition: transform .2s !important;
+  }
+
+  &.scale-in {
+    transform: scale(1);
+  }
+  transition: transform .3s cubic-bezier(0.53, 0.01, 0.36, 1.63) !important;
+}
+
+.pln1-img{}
+.pln1-img img{width: 15px;  position: absolute; top: 1px; left:14px;}
+.pln1-move{ 
+    position: relative;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left:85px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left:85px;}
+}
+.deprt-icon {
+
+  animation-name: stretch;
+  animation-duration: 1.9s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(1);
+   
+  }
+  50% {
+    transform: scale(1.6);
+  }
+}

@@ -1,0 +1,115 @@
+.tabs {
+  &.tabs-transparent {
+    background-color: transparent;
+
+    .tab a,
+    .tab.disabled a,
+    .tab.disabled a:hover {
+      color: rgba(255,255,255,0.7); 
+    }
+
+    .tab a:hover,
+    .tab a.active {
+      color: #fff;
+    }
+
+    .indicator {
+      background-color: #fff;
+    }
+  }
+
+  &.tabs-fixed-width {
+    display: flex;
+
+    .tab {
+      flex-grow: 1;
+    }
+  }
+
+  position: relative;
+  overflow-x: auto;
+  overflow-y: hidden;
+  height: 48px;
+  width: 100%;
+  /*background-color: $tabs-bg-color*/;
+  margin: 0 auto;
+  white-space: nowrap;
+
+  .tab {
+    display: inline-block;
+    text-align: center;
+    line-height:38px;
+    height:38px;
+    padding: 0;
+    margin: 0;
+    /*background-color: $tabs-bg-color;*/
+    
+
+  a {
+      &:hover,
+      &.active {
+        background-color: transparent;
+        color:#c82127;
+    }
+      color: rgba($tabs-text-color, .7);
+      /*display: block;*/
+      width: 100%;
+      height: 100%;
+      padding: 0 10px;
+      font-size:12px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      transition: color .28s ease; font-weight:bold;    position: relative;
+    z-index: 1;
+    }
+
+    &.disabled a,
+    &.disabled a:hover {
+      color: rgba($tabs-text-color, .7);
+      cursor: default;
+    }
+  }
+  .indicator {
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+   /* background-color: $tabs-underline-color;*/
+    will-change: left, right;
+    background-color:#ff0000;/*your color*/
+    display:none
+  }
+}
+
+// Fixed sideNav hide on smaller
+@media #{$medium-and-down} {
+  .tabs {
+    display: flex;
+
+    .tab {
+      flex-grow: 1;
+
+      a {
+        padding: 0 12px;
+
+
+
+      }
+
+
+
+
+    }
+  }
+}
+
+@media only screen and (max-width:600px){
+.tabs .tab {
+    display:inline-block;
+    text-align:center;
+    line-height:33px!important;
+    height:30px!important;
+    padding:0;
+    margin:0;
+
+}
+}

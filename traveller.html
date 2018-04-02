@@ -1,0 +1,1697 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TravelEasy</title>
+</head>
+<body>
+<!-- Modal filter -->
+<div id="modal1-farerule" class="modal">
+  <h5 class="modal-hdr">Fare Rules</h5>
+  <span><a href="#" class="modal-action modal-close modal-clsbtn"><i class="fa fa-close"></i></a></span>
+  <div class="modal-content">
+    <div class="row">
+      <div class="col s12 m12">
+        <h5 class="fare-sbhdng">Cancellation fee (per passenger)</h5>
+        <table class="bordered fare-reules">
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th>Cancellation Fee</th>
+              <th>Item Price</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DEL-GOI</td>
+              <td><p>24 hrs -365 days to departure</p>
+                <p>4-24 hours to departure</p></td>
+              <td><p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+                <p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="fare-smldng right">Date change fee (per passenger)</span></h5>
+        <table class="bordered fare-reules">
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th>Date change Fee</th>
+              <th>&nbsp;</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DEL-GOI</td>
+              <td><p>24 hrs -365 days to departure</p>
+                <p>4-24 hours to departure</p></td>
+              <td><p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+                <p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+            </tr>
+          </tbody>
+        </table>
+        <h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="right fare-smldng">Baggage allowance</span></h5>
+        <table class="bordered fare-reules">
+          <thead>
+            <tr>
+              <th>Sector</th>
+              <th>Adult</th>
+              <th>Child</th>
+              <th>Infant</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>DEL-GOI</td>
+              <td><p>0Kg</p></td>
+              <td>0Kg</td>
+              <td><p><i class="fa fa-inr" aria-hidden="true"></i>0Kg</p></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Start Page Loading -->
+<div id="loader-wrapper"> </div>
+<nav class="white hide-on-small-and-down" role="navigation">
+  <div class="nav-wrapper container"> <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn"><i class="material-icons">menu</i></a> <a id="logo-container" href="#" class="brand-logo"><img width="170" src="images/logo.svg" alt="traveleasy"></a>
+    <ul class="hide-on-med-and-down tp-nav nav-lft-spc">
+      <li><a href="#" class="active"><i class="fa fa-plane right-spc tinny"></i>Flight</a></li>
+      <li><a href="#"><i class="fa fa-gift right-spc tinny"></i>Offer</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down text-size2">
+      <li><a href="#"> <i class="fa fa-clock-o right-spc"></i>Easy Support</a></li>
+      <li> <a class = " dropdown-button padd0" href = "#" data-activates = "dropdown"> <i class="fa fa-user-circle-o right-spc"></i>Sign/SignUp<i class ="mdi-navigation-arrow-drop-down right"></i></a>
+        <ul id= "dropdown" class ="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Easy Support</a></li>
+      <li><a href="#">Sign/SignUp</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="full-width hide-on-med-and-up">
+  <div class="row white spc-div bdr-div spc-rmv padd0 ">
+    <div class="col s12 m12 padd0 heador mobile-head">
+      <div class="col s2 m2 padd0"><span class="grey lighten-2"><i class="fa fa-arrow-left" aria-hidden="true"></i></span></div>
+      <div class="col s8 m8 padd0">
+        <p class="center-align spc-div spc-tp7">TRAVELLER <!--<i class="fa fa-long-arrow-right" aria-hidden="true"></i> Mumbai--> </p>
+        <!--<p class="center-align"><i class="fa fa-plane" aria-hidden="true"></i> Fri, 23 Dec</p>--> 
+      </div>
+      <!--<div class="col s2 padd0 right-align"><span class="grey lighten-2"><i class="fa fa-filter fillterto" aria-hidden="true"></i></span></div>-->
+    </div>
+  </div>
+</div>
+<div class="container">
+  <div class="section tp-spc-rmvm1">
+    <div class="row">
+      <div class="col s12 m12"> 
+        <!-- HORIZONTAL STEPPER -->
+        <div class="mdl-card mdl-shadow--2dp hide-on-small-only" >
+          <div class="mdl-card__supporting-text">
+            <div class="mdl-stepper-horizontal-alternative">
+              <div id="stepper1" class="mdl-stepper-step ">
+                <div class="mdl-stepper-circle"><span>1</span></div>
+                <div class="mdl-stepper-title">Review</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper2" class="mdl-stepper-step active-step editable-step">
+                <div class="mdl-stepper-circle"><span>2</span></div>
+                <div class="mdl-stepper-title">Travellers</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper3" class="mdl-stepper-step">
+                <div class="mdl-stepper-circle"><span>3</span></div>
+                <div class="mdl-stepper-title">Payment</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper3" class="mdl-stepper-step">
+                <div class="mdl-stepper-circle"><span>4</span></div>
+                <div class="mdl-stepper-title">Confirmation</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end HORIZONTAL STEPPER --> 
+      </div>
+      <!-- mobile view show only -->
+      <div class="col s12 m12 l12 hide-on-med-and-up">
+        <div class="mdl-card mdl-shadow--2dp">
+          <div class="mdl-card__supporting-text">
+            <div class="mdl-stepper-horizontal-alternative">
+              <div id="stepper1" class="mdl-stepper-step">
+                <div class="mdl-stepper-circle"><span>1</span></div>
+                <div class="mdl-stepper-title">Review</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper2" class="mdl-stepper-step  active-step editable-step">
+                <div class="mdl-stepper-circle"><span>2</span></div>
+                <!--<div class="mdl-stepper-title">Travellers</div>-->
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper3" class="mdl-stepper-step">
+                <div class="mdl-stepper-circle"><span>3</span></div>
+                <div class="mdl-stepper-title">Payment</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+              <div id="stepper3" class="mdl-stepper-step">
+                <div class="mdl-stepper-circle"><span>4</span></div>
+                <div class="mdl-stepper-title">Confirmation</div>
+                <div class="mdl-stepper-bar-left"></div>
+                <div class="mdl-stepper-bar-right"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <ul class="collapsible scrl-bar" data-collapsible="accordion">
+        <li class="btm-spc-acrd accordian-bdr">
+            <div class="collapsible-header"> <i class="material-icons right more">expand_more</i> <i class="material-icons right less" style="display: none">expand_less</i> 
+            <span class="badge badge-pize"><i class="fa fa-inr"></i> 2500</span>
+              <h2 class="review_arrow_space collapse-hdng"><i class="material-icons dp48 review_flight">flight_takeoff</i><span class="hide-on-small-only">ONEWAY:</span> New Delhi 
+                Mumbai</h2>
+            </div>
+            <div class="collapsible-body">
+              <div class="row spc-rmv">
+                <div class="col s12 m12 white btm-spc spc-rmv-top">
+                  <div class="panel-heading-dbr spc-rmv-top">
+                    <div class="col s9 m9 padd0">
+                      <h2 class="panel-title city-nam"> <span class="city-nam"> <strong>New Delhi to <i class="fa fa-long-arrow-right"></i> Mumbai 18 Nov 2016, </strong> <i class="fa fa-clock-o"></i> 02h 10m Fri </span> </h2>
+                    </div>
+                    <div class="col s3 m3 padd0 right-align panel-sub " id="fare"><a href="#">Fare Rules</a> </div>
+                  </div>
+                  <!-- Fare Rules -->
+                  <div id="farerules">
+                    <div class="row">
+                      <div class="col s12 m12">
+                        <h5 class="fare-sbhdng">Cancellation fee (per passenger)</h5>
+                        <table class="bordered fare-reules">
+                          <thead>
+                            <tr>
+                              <th>Sector</th>
+                              <th>Cancellation Fee</th>
+                              <th>Item Price</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>DEL-GOI</td>
+                              <td><p>24 hrs -365 days to departure</p>
+                                <p>4-24 hours to departure</p></td>
+                              <td><p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+                                <p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="fare-smldng right">Date change fee (per passenger)</span></h5>
+                        <table class="bordered fare-reules">
+                          <thead>
+                            <tr>
+                              <th>Sector</th>
+                              <th>Date change Fee</th>
+                              <th>&nbsp;</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>DEL-GOI</td>
+                              <td><p>24 hrs -365 days to departure</p>
+                                <p>4-24 hours to departure</p></td>
+                              <td><p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+                                <p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        <h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="right fare-smldng">Baggage allowance</span></h5>
+                        <table class="bordered fare-reules">
+                          <thead>
+                            <tr>
+                              <th>Sector</th>
+                              <th>Adult</th>
+                              <th>Child</th>
+                              <th>Infant</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <td>DEL-GOI</td>
+                              <td><p>0Kg</p></td>
+                              <td>0Kg</td>
+                              <td><p><i class="fa fa-inr" aria-hidden="true"></i>0Kg</p></td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- Fare Rules End -->
+                  
+                  <div class="row">
+                    <div class="col s12 m12 padd0 tp-spc1">
+                      <div class="col s2 m2 padd0">
+                        <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                          6E-96 &nbsp; </p>
+                      </div>
+                      <div class="col s3 m3 padd0 left-align">
+                        <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                      </div>
+                      <div class="col s1 m1 padd0 center arrosec1"> <img class="img-responsive img-cen hide-on-med-and-down tp-spc2" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i> </div>
+                      <div class="col s3 m3 padd0 right-align">
+                        <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                      </div>
+                      <div class="col s3 m3 right-align ">
+                        <p class="timeflir"> <i class="fa fa-inr"></i>2500</p>
+                        <span class="nonstp">Non Stop</span> </div>
+                    </div>
+                    <div class="col s12 m12 spc-div">
+                      <div class="clearfix"></div>
+                      <p class="flight-detal flit-open-to right-align"><a href="javascript:void(0)"><i class="fa fa-plus-square-o icochan plus-icon"></i> </a> </p>
+                      <div class="row flite-detail" id="panel">
+                        <div class="col s12">
+                          <ul class="tabs tabsmobile  spc-btm">
+                            <li class="tab tabmobile col s2 m2"> <a href="#mb1" class="active tab-txt padd0">Flight details </a> </li>
+                            <li class="tab tabmobile col s2 m2"> <a href="#mb2" class="tab-txt padd0"> Baggage details</a> </li>
+                            <li class="tab tabmobile col s2 m2"> <a href="#mb3" class="tab-txt padd0"> Cancellation fee </a> </li>
+                            <li class="tab tabmobile col s2 m2"> <a href="#mb4" class="tab-txt padd0"> Date change fee </a> </li>
+                          </ul>
+                        </div>
+                        <div id="mb1" class="active">
+                          <ul class="collection">
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <p class="collections-title ">
+                                <h4 class="item-header spc-rmv2 hide-on-small-and-down">New Delhi to Mumbai</h4>
+                                </p>
+                                <div class="col s2 m2 padd0">
+                                  <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                                    6E-96 &nbsp; </p>
+                                </div>
+                                <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                                <div class="col s12 m12 padd0 tp-spc1 spc-btm">
+                                  <div class="col s6 m6 padd0 left-align">
+                                    <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                                  </div>
+                                  <div class="col s6 m6 padd0 right-align">
+                                    <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                                  </div>
+                                </div>
+                                <div class="stopway col s12 m12 padd0">
+                                  <p class="flightsigm flightsigm width-full spc-btm"> <span>Plane change at Hyderabad | Waiting: 1h 10m</span> </p>
+                                </div>
+                              </div>
+                              <div class="row spc-rmv">
+                                <div class="col s2 m2 padd0">
+                                  <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                                    6E-96 &nbsp; </p>
+                                </div>
+                                <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                                <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                                  <div class="col s6 m6 padd0 left-align">
+                                    <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                                  </div>
+                                  <div class="col s6 m6 padd0 right-align">
+                                    <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                                  </div>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div id="mb2">
+                          <ul class="collection">
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title">
+                                  <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s4">
+                                  <p class="collections-title"> <span class="item-sub">Adult</span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s4">
+                                  <p class="collections-title"> <span class="item-sub">Child</span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s4">
+                                  <p class="collections-title"> <span class="item-sub">Infant</span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                                </div>
+                                <div class="col s4">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div id="mb3">
+                          <ul class="collection">
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title">
+                                  <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                                  </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title">
+                                  <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                        <div id="mb4">
+                          <ul class="collection">
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title">
+                                  <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                                  </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title">
+                                  <h4 class="item-header spc-rmv spc-rmv2 right-align">Per Passenger Fee</h4>
+                                  </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">30-365 days </span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">7-30 days </span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                            <li class="collection-item">
+                              <div class="row spc-rmv">
+                                <div class="col s6">
+                                  <p class="collections-title"> <span class="item-sub">2-7 days </span> </p>
+                                </div>
+                                <div class="col s6">
+                                  <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                                </div>
+                              </div>
+                            </li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+          <!--<i class="material-icons dp48 green-text icon_circle right small">check</i>-->
+           <span class="badge badge-pize">Adult 2</span>
+          <h2 class="collapse-hdng">ADULT 1</h2>
+          </div>
+          <div class="collapsible-body">
+          
+             <div class="row">
+              
+              <div class="col s12 m10 l10">
+                  
+                <div class="col s6 m4 l2">
+                  
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                 
+                </div>
+                  <div class="col s6 m8 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                  <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2 spc-lt"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o plus-icon"></i></a></p>
+                <div class="col-sm-12 file-open04 accrot spc-ft-rt">
+                  <div class="row spc-rmv">
+                  <div class="col s6 m8 l3 ">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate spc-rmv">
+                    <label class="" for="last_name">FF Number :</label>
+                  </div>
+                </div>
+                <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Select Airlines</option>
+                          <option>Indian Airlines</option>
+                          <option>Indigo</option>
+                          <option>Spicejet</option>
+                          <option>GoAir</option>
+                      </select>
+                </div>
+                <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Meals</option>
+                           <option>Veg</option>
+                           <option>Non Veg</option>
+                      </select>
+                </div>
+                <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Baggage</option>
+                           <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                      </select>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+            <!--<i class="material-icons dp48 green-text icon_circle right small">check</i>-->
+             <span class="badge badge-pize">Adult 4</span>
+          <h2 class="collapse-hdng">ADULT 2</h2>
+          </div>
+          <div class="collapsible-body">
+             <div class="row">
+              <div class="col s12 m10 l10">
+                <div class="col s6 m4 l2">
+                  
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                 
+                </div>
+                  <div class="col s6 m8 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                  <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2 spc-lt"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o plus-icon"></i></a></p>
+                <div class="col-sm-12 file-open04 accrot spc-ft-rt">
+                  <div class="row spc-rmv">
+                  <div class="col s6 m8 l3 ">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate spc-rmv">
+                    <label class="" for="last_name">FF Number :</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Select Airlines</option>
+                          <option>Indian Airlines</option>
+                          <option>Indigo</option>
+                          <option>Spicejet</option>
+                          <option>GoAir</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Meals</option>
+                           <option>Veg</option>
+                           <option>Non Veg</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Baggage</option>
+                           <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                      </select>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+            <!--<i class="material-icons dp48 green-text icon_circle right small">check</i>-->
+             <span class="badge badge-pize">Adult 2</span>
+          <h2 class="collapse-hdng">ADULT 3</h2>
+          </div>
+          <div class="collapsible-body">
+             <div class="row">
+              <div class="col s12 m10 l10">
+                <div class="col s6 m4 l2">
+                  
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                 
+                </div>
+                  <div class="col s6 m8 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                  <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2 spc-lt"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o plus-icon"></i></a></p>
+                <div class="col-sm-12 file-open04 accrot spc-ft-rt">
+                  <div class="row spc-rmv">
+                  <div class="col s6 m8 l3 ">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate spc-rmv">
+                    <label class="" for="last_name">FF Number :</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Select Airlines</option>
+                          <option>Indian Airlines</option>
+                          <option>Indigo</option>
+                          <option>Spicejet</option>
+                          <option>GoAir</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Meals</option>
+                           <option>Veg</option>
+                           <option>Non Veg</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Baggage</option>
+                           <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                      </select>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+            <!--<i class="material-icons dp48 green-text icon_circle right small">check</i>-->
+             <span class="badge badge-pize">Adult 1</span>
+          <h2 class="collapse-hdng">ADULT 4</h2>
+          </div>
+          <div class="collapsible-body">
+             <div class="row">
+              <div class="col s12 m10 l10">
+                <div class="col s6 m4 l2">
+                  
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                 
+                </div>
+                  <div class="col s6 m8 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                  <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2 spc-lt"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o plus-icon"></i></a></p>
+                <div class="col-sm-12 file-open04 accrot spc-ft-rt">
+                  <div class="row spc-rmv">
+                  <div class="col s6 m8 l3 ">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate spc-rmv">
+                    <label class="" for="last_name">FF Number :</label>
+                  </div>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Select Airlines</option>
+                          <option>Indian Airlines</option>
+                          <option>Indigo</option>
+                          <option>Spicejet</option>
+                          <option>GoAir</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Meals</option>
+                           <option>Veg</option>
+                           <option>Non Veg</option>
+                      </select>
+                </div>
+                  <div class="col s6 m4 l2">
+                   <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Baggage</option>
+                           <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                      </select>
+                </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+            <i class="material-icons dp48 green-text icon_circle right small">check</i>
+            <h2 class="collapse-hdng"> GST</h2>
+          </div>
+          <div class="collapsible-body">
+            <div class="row spc-rmv">
+            <div class="traveller_GST">
+                    <input type="checkbox" id="chkPassport" class="filled-in">
+                    <label class="traveler_label left" for="chkPassport"></label>
+                    <p>GST number for business travel<span class="traveller_mobile">(optional)</span></p>
+                    <p class="gst_text">To claim credit of GST charged by airlines/MMT, please enter your company's GST number</p>
+                  </div>
+            <div class="col s12 m12 l12 dvPassport" style="display:none">
+                    <div class="col s6 m6 l4">
+                    <div class="input-field dvPassport">
+                        <input id="txtPassportNumber" type="text" class="validate">
+                        <label id="txtPassportNumber" for="last_name">Registration Number</label>
+                     </div>
+              </div>
+                    <div class="col s6 m6 l4">
+                    <div class="input-field dvPassport">
+                        <input id="txtPassportNumber" type="text" class="validate">
+                        <label id="txtPassportNumber" for="last_name">Registered Company Name</label>
+                      </div>
+              </div>
+                    <div class="col s12 m12">
+                    <p class="text-size2"><strong>NOTE:</strong> Search Airfare for over 400 airlines in a second.</p></div>
+                  </div>
+                  
+                  
+                  
+          </div>
+          </div>
+        </li>
+        <li class="btm-spc-acrd accordian-bdr">
+          <div class="collapsible-header">
+            <i class="material-icons right more">expand_more</i>
+            <i class="material-icons right less" style="display: none">expand_less</i>
+            <i class="material-icons dp48 green-text icon_circle right small">check</i>
+            <h2 class="collapse-hdng">Fare Summary</h2>
+          </div>
+          <div class="collapsible-body">
+            <div class="row">
+        <ul class="collapsible collapsible-accordion bx-shdw" data-collapsible="accordion">
+                <li>
+            <div class="collapsible-header fnt0-hglt2">BASE FARE <span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+            <div class="collapsible-body padd0" style="display: block;">
+                    <ul class="collection with-header">
+                <li class="collection-item">
+                        <div class="text-size2"> 1 Adult(s)
+                    <p class="right fnt0-hglt1"><i class="fa fa-inr" aria-hidden="true"></i> 200500</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2"> Totale Base Fare
+                    <p class="right"><i class="fa fa-inr" aria-hidden="true"></i> 200500</p>
+                  </div>
+                      </li>
+              </ul>
+                  </div>
+          </li>
+                <li class="">
+            <div class="collapsible-header fnt0-hglt2">TAX & FEES<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+            <div class="collapsible-body padd0" style="display: block;">
+                    <ul class="collection with-header">
+                <li class="collection-item">
+                        <div class="text-size2"> CUTE Fee
+                    <p class="right"><i class="fa fa-inr"></i>50</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2"> Airline Fuel Charge
+                    <p class="right"><i class="fa fa-inr"></i>50</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2"> GST
+                    <p class="right"><i class="fa fa-inr"></i>160</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2"> Passenger Service Fee
+                    <p class="right"><i class="fa fa-inr"></i>153</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2"> User Development Fee
+                    <p class="right"><i class="fa fa-inr"></i>12</p>
+                  </div>
+                      </li>
+              </ul>
+                  </div>
+          </li>
+                <li class="active">
+            <div class="collapsible-header fnt0-hglt2">TOTAL SERVICES<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+            <div class="collapsible-body padd0">
+                    <ul class="collection with-header">
+                <li class="collection-item">
+                        <div class="text-size2"> Insurance
+                    <p class="right">250</p>
+                  </div>
+                      </li>
+                <li class="collection-item">
+                        <div class="text-size2 fnt0-hglt"> Total Services
+                    <p class="right"><i class="fa fa-inr"></i>250</p>
+                  </div>
+                      </li>
+              </ul>
+                  </div>
+          </li>
+                <li class="active">
+            <div class="collapsible-header active fnt0-hglt2">GRAND TOTAL<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+            <div class="collapsible-body center-align"> <span>
+              <h5><i class="fa fa-inr"></i> 200500</h5>
+              </span> </div>
+          </li>
+              </ul>
+          </div>
+          </div>
+        </li>
+
+       
+       </ul>
+       <div class="col s12 m12 btm-spc padd0 guest-login">
+          <button type="button" class="waves-effect waves-light btn col s12 btn-mbl">Continue to payment</button>
+       </div>
+      </div>
+      <!-- mobile view show only end-->
+      <div class="hide-on-small-only">
+        <div class="col s12 m9 lft-rmv right-rmv width-full-list box-spc-rmv">
+          <h6>DEPARTURE</h6>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc spc-rmv-top">
+            <div class="panel-heading-dbr spc-btm">
+              <div class="col s9 m9 padd0">
+                <h2 class="panel-title">New Delhi to Mumbai 18 Nov 2016, Fri</h2>
+              </div>
+              <div class="col s3 m3 padd0 right-align panel-sub txt-hover-efct"><a href="#modal1-farerule" class="black-text modal-trigger">Fare Rules </a></div>
+            </div>
+            <div class="row">
+              <div class="col s12 m12 spc-div">
+                <div class="col s2 m2 padd0">
+                  <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                    6E-96 &nbsp; </p>
+                </div>
+                <div class="col s2 m2 padd0 right-align">
+                  <p class="timeflir">New Delhi 05:30 <br>
+                    <span class="hide-on-med-and-down">New Delhi
+                    Indira Gandhi Airport (DEL) </span> <span class="hide-on-large-only">02h 10m</span> </p>
+                </div>
+                <div class="col s2 m2 padd0 center arrosec1"> <img class="img-responsive img-cen hide-on-med-and-down tp-spc2" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i> </div>
+                <div class="col s2 m2 padd0 left-align">
+                  <p class="timeflir">05:30 Mumbai <span class="hide-on-med-and-down">Mumbai Chhatrapati Shivaji Airport (BOM) </span> <span class="hide-on-large-only">Chhatrapati Shivaji Airport (BOM)
+                    Chhatrapati Shivaji Airport (BOM)</span> </p>
+                </div>
+                <div class="col s2 m4 right-align ">
+                  <p class="timeflir"> <i class="fa fa-inr"></i>02h 10m </p>
+                  <span class="nonstp">Non Stop</span> </div>
+                <div class="clearfix"></div>
+                <p class="flight-detal flit-open-to right-align"> <a href="javascript:void(0)"> <span class="flitedet hide-on-small-only">Flight Details</span> <i class="fa fa-plus-square-o icochan plus-icon"></i> </a> </p>
+                <div class="row flite-detail" id="panel">
+                  <div class="col s12">
+                    <ul class="tabs ">
+                      <li class="tab col s2 m2"> <a href="#test1" class="active tab-txt padd0"> <i class="fa fa-plane hide-on-med-and-up text-size3" a=""></i> <span class="hide-on-small-only"> Flight details</span> </a> </li>
+                      <li class="tab col s2 m2"> <a href="#test3" class="tab-txt padd0"> <i class="fa fa-briefcase hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Baggage details</span> </a> </li>
+                      <li class="tab col s2 m2"> <a href="#test4" class="tab-txt padd0"> <i class="fa fa-times hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only">Cancellation fee</span> </a> </li>
+                      <li class="tab col s2 m2"> <a href="#test0" class="tab-txt padd0"> <i class="fa fa-calenda hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Date change fee </span> </a> </li>
+                    </ul>
+                  </div>
+                  <div id="test1" class="active">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row">
+                          <p class="collections-title ">
+                          <h4 class="item-header spc-rmv2 hide-on-small-and-down">New Delhi to Mumbai</h4>
+                          </p>
+                          <div class="col s2 m2 padd0">
+                            <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                              6E-96 &nbsp; </p>
+                          </div>
+                          <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                          <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                            <div class="col s6 m6 padd0 left-align">
+                              <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                            </div>
+                            <div class="col s6 m6 padd0 right-align">
+                              <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                            </div>
+                          </div>
+                          <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                            <p class="timeflir">05:30 <br>
+                              <span >Indira Gandhi International Airport </span> </p>
+                          </div>
+                          <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                            <p>02h 10m</p>
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>1 Stop</p>
+                          </div>
+                          <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                            <p class="timeflir">05:30 <br>
+                              <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                          </div>
+                          <div class="col s2 m2 padd0 right-align hide-on-small-only">Refundable</div>
+                          <div class="stopway col s12 m12 padd0">
+                            <p class="flightsigm flightsigm width-full spc-btm"> <span>Plane change at Hyderabad | Waiting: 1h 10m</span> </p>
+                          </div>
+                        </div>
+                        <div class="row spc-rmv">
+                          <div class="col s2 m2 padd0">
+                            <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                              6E-96 &nbsp; </p>
+                          </div>
+                          <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                          <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                            <div class="col s6 m6 padd0 left-align">
+                              <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                            </div>
+                            <div class="col s6 m6 padd0 right-align">
+                              <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                            </div>
+                          </div>
+                          <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                            <p class="timeflir">05:30 <br>
+                              <span >Indira Gandhi International Airport</span> </p>
+                          </div>
+                          <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                            <p>02h 10m</p>
+                            <i class="fa fa-clock-o" aria-hidden="true"></i>
+                            <p>1 Stop</p>
+                          </div>
+                          <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                            <p class="timeflir">05:30 <br>
+                              <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                          </div>
+                          <div class="col s2 m2 padd0 right-align hide-on-small-only">Refundable</div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="test3">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title">
+                            <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s4">
+                            <p class="collections-title"> <span class="item-sub">Adult</span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s4">
+                            <p class="collections-title"> <span class="item-sub">Child</span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s4">
+                            <p class="collections-title"> <span class="item-sub">Infant</span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                          </div>
+                          <div class="col s4">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="test4">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title">
+                            <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                            </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title">
+                            <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div id="test0">
+                    <ul class="collection">
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title">
+                            <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                            </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title">
+                            <h4 class="item-header spc-rmv spc-rmv2 right-align">Per Passenger Fee</h4>
+                            </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">30-365 days </span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">7-30 days </span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="collection-item">
+                        <div class="row spc-rmv">
+                          <div class="col s6">
+                            <p class="collections-title"> <span class="item-sub">2-7 days </span> </p>
+                          </div>
+                          <div class="col s6">
+                            <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                          </div>
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc">
+            <div class="row">
+              <div class="col s3 m2 l2">
+                <div class="input-field linH-spc6 text-size2">ADULT 1 :</div>
+              </div>
+              <div class="col s9 m10 l10 padd0">
+                <div class="col s6 m4 l2">
+                <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                </div>
+                <div class="col s6 m8 l3 padd0">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o text-size3"></i></a></p>
+                <div class="col-md-12 col-sm-12 col-xs-12 padd0 file-open04 accrot">
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">FF Number :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <input id="last_name" type="text" class="validate">
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Airlines</option>
+                          <option>Airlines1</option>
+                          <option>Airlines2</option>
+                          <option>Airlines3</option>
+                          <option>Airlines4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">Meals :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Meals</option>
+                          <option>Meals1</option>
+                          <option>Meals2</option>
+                          <option>Meals3</option>
+                          <option>Meals4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Baggage</option>
+                          <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc">
+            <div class="row">
+              <div class="col s3 m2 l2">
+                <div class="input-field linH-spc6 text-size2">ADULT 2:</div>
+              </div>
+              <div class="col s9 m10 l10 padd0">
+                <div class="col s6 m4 l2">
+                <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                  
+                </div>
+                <div class="col s6 m8 l3 padd0">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o text-size3"></i></a></p>
+                <div class="col-md-12 col-sm-12 col-xs-12 padd0 file-open04 accrot">
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">FF Number :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <input id="last_name" type="text" class="validate">
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Airlines</option>
+                          <option>Airlines1</option>
+                          <option>Airlines2</option>
+                          <option>Airlines3</option>
+                          <option>Airlines4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">Meals :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Meals</option>
+                          <option>Meals1</option>
+                          <option>Meals2</option>
+                          <option>Meals3</option>
+                          <option>Meals4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Baggage</option>
+                          <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc">
+            <div class="row">
+              <div class="col s3 m2 l2">
+                <div class="input-field linH-spc6 text-size2">ADULT 3 :</div>
+              </div>
+              <div class="col s9 m10 l10 padd0">
+                <div class="col s6 m4 l2">
+                  <select class="browser-default valid select_economy select-menu" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                        <option value="1" selected="">Male</option>
+                        <option value="2">Female</option>
+                      </select>
+                </div>
+                <div class="col s6 m8 l3 padd0">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o text-size3"></i></a></p>
+                <div class="col-md-12 col-sm-12 col-xs-12 padd0 file-open04 accrot">
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">FF Number :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <input id="last_name" type="text" class="validate">
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Airlines</option>
+                          <option>Airlines1</option>
+                          <option>Airlines2</option>
+                          <option>Airlines3</option>
+                          <option>Airlines4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">Meals :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Meals</option>
+                          <option>Meals1</option>
+                          <option>Meals2</option>
+                          <option>Meals3</option>
+                          <option>Meals4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Baggage</option>
+                          <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc">
+            <div class="row">
+              <div class="col s3 m2 l2">
+                <div class="input-field linH-spc6 text-size2">ADULT 4 :</div>
+              </div>
+              <div class="col s9 m10 l10 padd0">
+                <div class="col s6 m4 l2">
+                  <div class="input-field">
+                    <select>
+                      <option selected="" class="text-size2">MALE</option>
+                      <option>FEMALE</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col s6 m8 l3 padd0">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">First Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m8 l4">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label class="" for="last_name">Last Name</label>
+                  </div>
+                </div>
+                <div class="col s6 m4 l3">
+                  <div class="input-field">
+                    <input id="last_name" type="text" class="validate">
+                    <label for="last_name">Mobile</label>
+                  </div>
+                </div>
+                <p class="traveuser flit-open-to text-size3"> <a href="javascript:void(0)" class="black-text text-size2"> Other Request &amp; Services <span class="traveller_mobile">(optional)</span> <i class="fa icochan fa-plus-square-o text-size3"></i></a></p>
+                <div class="col-md-12 col-sm-12 col-xs-12 padd0 file-open04 accrot">
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">FF Number :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <input id="last_name" type="text" class="validate">
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Airlines</option>
+                          <option>Airlines1</option>
+                          <option>Airlines2</option>
+                          <option>Airlines3</option>
+                          <option>Airlines4</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row spc-rmv">
+                    <div class="col s6 m2">
+                      <div class="input-field linH-spc6 text-size2">Meals :</div>
+                    </div>
+                    <div class="col s6 m3 padd0 ">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Meals</option>
+                          <option>Meals1</option>
+                          <option>Meals2</option>
+                          <option>Meals3</option>
+                          <option>Meals4</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="col s6 m3 padd0 center">
+                      <div class="input-field linH-spc6 text-size2">Select Airlines: :</div>
+                    </div>
+                    <div class="col s6 m3 padd0">
+                      <div class="input-field">
+                        <select>
+                          <option selected="" class="text-size2">Baggage</option>
+                          <option>10kg</option>
+                          <option>20kg</option>
+                          <option>30kg</option>
+                          <option>35kg</option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc">
+            <div class="row">
+              <div class="traveller_GST">
+                <input type="checkbox" id="chkPassport" class="filled-in">
+                <label class="traveler_label left" for="chkPassport"></label>
+                <p>GST number for business travel<span class="traveller_mobile">(optional)</span></p>
+                <p class="gst_text">To claim credit of GST charged by airlines/MMT, please enter your company's GST number</p>
+              </div>
+              <div class="col s12 m12 l12">
+                <div class="col s6 m6 l4">
+                  <div class="input-field dvPassport" style="display: none">
+                    <input id="txtPassportNumber"  type="text" class="validate">
+                    <label id="txtPassportNumber" for="last_name" >Registration Number</label>
+                  </div>
+                </div>
+                <div class="col s6 m6 l4">
+                  <div class="input-field dvPassport" style="display: none">
+                    <input id="txtPassportNumber"  type="text" class="validate">
+                    <label id="txtPassportNumber" for="last_name" >Registered Company Name</label>
+                  </div>
+                </div>
+                <div class="col s12 m12 l12">
+                  <div class="dvPassport" style="display: none">
+                    <div id="txtPassportNumber">
+                      <p class="text-size2"><strong>NOTE:</strong> Search Airfare for over 400 airlines in a second.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="padd0 demo col s6 offset-s3 grid-example review_btmspc"> <a class="waves-effect waves-light btn login_width">Continue to payment</a> </div>
+        </div>
+        <div class="col m3 s12 right-rmv right-side">
+          <h6>FARE SUMMARY</h6>
+          <ul class="collapsible collapsible-accordion bx-shdw" data-collapsible="accordion">
+            <li>
+              <div class="collapsible-header fnt0-hglt2">BASE FARE <span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+              <div class="collapsible-body padd0" style="display: block;">
+                <ul class="collection with-header">
+                  <li class="collection-item">
+                    <div class="text-size2"> 1 Adult(s)
+                      <p class="right fnt0-hglt1"><i class="fa fa-inr" aria-hidden="true"></i> 200500</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2"> Totale Base Fare
+                      <p class="right"><i class="fa fa-inr" aria-hidden="true"></i> 200500</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="">
+              <div class="collapsible-header fnt0-hglt2">TAX & FEES<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+              <div class="collapsible-body padd0" style="display: block;">
+                <ul class="collection with-header">
+                  <li class="collection-item">
+                    <div class="text-size2"> CUTE Fee
+                      <p class="right"><i class="fa fa-inr"></i>50</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2"> Airline Fuel Charge
+                      <p class="right"><i class="fa fa-inr"></i>50</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2"> GST
+                      <p class="right"><i class="fa fa-inr"></i>160</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2"> Passenger Service Fee
+                      <p class="right"><i class="fa fa-inr"></i>153</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2"> User Development Fee
+                      <p class="right"><i class="fa fa-inr"></i>12</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="active">
+              <div class="collapsible-header fnt0-hglt2">TOTAL SERVICES<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+              <div class="collapsible-body padd0">
+                <ul class="collection with-header">
+                  <li class="collection-item">
+                    <div class="text-size2"> Insurance
+                      <p class="right">250</p>
+                    </div>
+                  </li>
+                  <li class="collection-item">
+                    <div class="text-size2 fnt0-hglt"> Total Services
+                      <p class="right"><i class="fa fa-inr"></i>250</p>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li class="active">
+              <div class="collapsible-header active fnt0-hglt2">GRAND TOTAL<span class="right fnt0-hglt1"><i class="fa fa-inr "></i>2500</span></div>
+              <div class="collapsible-body center-align"> <span>
+                <h5><i class="fa fa-inr"></i> 200500</h5>
+                </span> </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+<!--Import jQuery before materialize.js--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script type="text/javascript" src="js/init.js"></script> 
+<script>
+$(document).ready(function(){
+	$('ul.tabs1 li').click(function(){
+		var tab_id = $(this).attr('data-tab');
+
+		$('ul.tabs1 li').removeClass('current');
+		$('.tab-content').removeClass('current');
+
+		$(this).addClass('current');
+		$("#"+tab_id).addClass('current');
+	})
+})
+</script>
+</body>
+</html>

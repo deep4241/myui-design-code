@@ -1,0 +1,784 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/home-page.css" media="screen,projection"/>
+
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TravelEasy</title>
+</head>
+<body>
+<!-- STARTING PAGE LOADING -->
+<div id="loader-wrapper"> </div>
+
+<!-- NAV BAR -->
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container-home">
+  
+   <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn hide-on-small-only"><i class="material-icons">menu</i></a> 
+   <!--  <a href="#" id="nav-mbl" class="button-collapse rmv-mrgn hide-on-med-and-up"><i class="material-icons">menu</i></a> -->
+ <a class='dropdown-button hide-on-med-and-up mb-mnu' href='#' data-activates='dropdown1' data-beloworigin="true"><i class="material-icons">menu</i></a>
+   <a id="logo-container" href="#" class="brand-logo"><img width="170" src="images/logo.svg" alt="traveleasy"></a>
+    <ul class="hide-on-med-and-down tp-nav nav-lft-spc">
+      <li><a href="#" class="active"><i class="fa fa-plane right-spc tinny"></i>Flight</a></li>
+      <li><a href="#"><i class="fa fa-gift right-spc tinny"></i>Offer</a></li>
+    </ul>
+    
+    
+        <ul class="right hide-on-med-and-down text-size2">
+    <li><a href="#"> <i class="fa fa-clock-o right-spc"></i>Easy Support</a></li>
+    <li> <a class = " dropdown-button padd0" href = "#" data-activates ="dropdown">
+    <i class="fa fa-user-circle-o right-spc"></i>Sign In/SignUp<i class ="mdi-navigation-arrow-drop-down right"></i></a>
+        <ul id= "dropdown" class ="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </li>
+    </ul>
+    
+    <!-- Mobile view navbar -->
+        <ul id='dropdown1' class='nav-mbview dropdown-content dropdown-nested'>
+<li><a class='dropdown-button' href='#' data-activates='dropdown2' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">flight</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown3' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">people</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown4' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">live_help</i><span class="right-triangle">&#9656;</span></a></li>
+
+<li><a class='dropdown-button' href='#' data-activates='dropdown5' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">library_books</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown6' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">forum</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown7' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">cancel</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown8' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">help_outline</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown9' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">contacts</i><span class="right-triangle">&#9656;</span></a></li>
+<li><a class='dropdown-button' href='#' data-activates='dropdown10' data-hover="hover" data-alignment="left"><i class="material-icons left-icon nvicn">smartphone</i><span class="right-triangle">&#9656;</span></a></li>
+        
+        
+             
+		</ul>
+		<ul id='dropdown2' class='dropdown-content dropdown-nested '>
+			<li><a href="#!">Flight</a></li>
+		</ul>
+        <ul id='dropdown3' class='dropdown-content dropdown-nested'>
+			<li><a href="#!">Sign/SignUp</a></li>
+		</ul>
+        <ul id='dropdown4' class='dropdown-content dropdown-nested'>
+			<li><a href="#!">Customer Services</a></li>
+		</ul>
+        <ul id='dropdown5' class='dropdown-content dropdown-nested'>
+			<li><a href="#!">Print E-Ticket</a></li>
+		</ul>
+        <ul id='dropdown6' class='dropdown-content dropdown-nested'>
+			<li><a href="#!">Manage Bookings</a></li>
+		</ul>
+        <ul id='dropdown7' class='dropdown-content dropdown-nested'>
+			<li><a href="#!">Cancellation</a></li>
+		</ul>
+        <ul id='dropdown8' class='dropdown-content dropdown-nested'>
+			<li><a href="#!"> FAQs</a></li>
+		</ul>
+        <ul id='dropdown9' class='dropdown-content dropdown-nested'>
+			<li><a href="#!"> Contact Us</a></li>
+		</ul>
+        <ul id='dropdown10' class='dropdown-content dropdown-nested'>
+			<li><a href="#!"> Easy Support</a></li>
+		</ul>
+     <!-- Mobile view navbar end -->
+       
+      
+    <ul id="nav-mobile" class="side-nav hide-on-small-only">
+      <li class="user-details" style="border-bottom:rgba(14,67,167,0.9) 1px solid">
+        <div class="row">
+          <div class="container center avtar"> <img src="images/svg/default-profile.svg" alt="" class="circle responsive-img tp-mrgn1"> </div>
+          <p class="white-text rmv-mrgn center">User Name</p>
+        </div>
+      </li>
+      <li style="border-bottom:rgba(14,67,167,0.9) 1px solid; position:relative; z-index:99999;"><a href="#"><i class="material-icons left-icon">flight</i>Flight</a></li>
+      <li><a href="#"><i class="material-icons left-icon">people</i>Sign/SignUp</a></li>
+      <li><a href="#"><i class="material-icons left-icon">live_help</i> Customer Services</a></li>
+      <li><a href="#"><i class="material-icons left-icon">library_books</i> Print E-Ticket</a></li>
+      <li><a href="#"><i class="material-icons left-icon">forum</i> Manage Bookings</a></li>
+      <li><a href="#"><i class="material-icons left-icon">cancel</i> Cancellation</a></li>
+      <li><a href="#"><i class="material-icons left-icon">help_outline</i>FAQs</a></li>
+      <li><a href="#"><i class="material-icons left-icon">contacts</i>Contact Us</a></li>
+      <li><a href="#"><i class="material-icons left-icon">smartphone</i> Easy Support</a></li>
+      <div class="bnr-spc"><a href="#"><img src="images/banners1.png"></a></div>
+    </ul>
+  </div>
+</nav>
+<!-- BOOKING ENGINE -->
+<div id="index-banner" class="parallax-container pattern-overlay scrollwin5">
+  <div class="pad-bottom scrollwin5">
+    <div class="container-home">
+      <div class="row hide-on-small-only scrollwin6">
+        <h4 class="header center white-text text-lighten-2 header_bold">Find the best flight deals</h4>
+        <div class="center">
+          <p class="header col s12 light white-text space_remove font_space">Book cheap Flight tickets at Lowest airfares at TravelEasy.com</p>
+        </div>
+      </div>
+      <div class="row spc-onewr">
+        <div class="col m1 sticky-mnu hide-on-small-only"> <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn"><i class="material-icons">menu</i></a> </div>
+        <div class="section left btn_space oneway-retrn "> <a href="#" id="download-button" class="col l12 waves-effect waves-light btn primary white-text oneway-retrn active">ONE WAY</a> </div>
+        <div class="section left btn_space oneway-retrn"><a href="#" id="download-button" class="col l12 waves-effect waves-light btn primary  oneway-retrn ">ROUND TRIP</a>
+          <div class="amber darken-3 "></div>
+        </div>
+      </div>
+      <div class="parallax parallax-img scrollwin6"><img src="images/header.jpg"alt="Unsplashed background img 1" style="display:block;transform: translate3d(-50%,260px, 0px);"></div>
+      <div class="row">
+        <form class="col s12 m12 l12 pad-eq">
+          
+          <div class="input-field col s6 input-mw m4 l2 srch-spc Flying_From input-mw"> <i class="material-icons dp48 icon_loc left">location_on</i>
+            <input placeholder="New Delhi (DEL)" type="text" class="home_bannner font_form" required>
+            <span class="highlight"></span>
+            <label for="first_name" class="active input-dsgn">Flying From</label>
+          </div>
+          <div class="arrow_col left hide-on-small-only " id="swap"> 
+            <!--<i class="fa fa-exchange icon_loc swapicn icoAni"></i>--> 
+            <i class="material-icons dp48 icon_color icoAni">swap_horiz</i> </div>
+          <div class="input-field col s6 m4 l2 srch-spc Flying_To"> <i class="material-icons dp48 icon_loc left">location_on</i>
+            <input placeholder="Bangalore (BLR)" id="modifysearhc1" type="text" class="home_bannner font_form" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Flying To</label>
+          </div>
+          <div class="input-field col s6 m4 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">date_range</i>
+            <input placeholder="16 Jan, Tue " id="last_name" type="date" class="home_bannner datepicker font_form" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Departing</label>
+          </div>
+          <div class="input-field col s6 m3 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">date_range</i>
+            <input disabled="" placeholder="Return" id="disabled" type="date" class="home_bannner datepicker disabled-bdr font_form" required>
+            <span class="highlight"></span>
+            <label for="disabled" class="active input-dsgn">Returning</label>
+            <i class="material-icons dp48 right icon_close icon_color">close</i> </div>
+          <div class="input-field col s12 m3 srch-spc l2 flight_age_box Flying_box"> <i class="material-icons dp48 icon_loc left">person_outline</i>
+            <input  placeholder="Traveller &amp; Class" type="text" class="home_bannner font_form" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Traveller &amp; Class</label>
+          </div>
+          <div class="input-field col s12 m3 l2"> <a href="#"  class="waves-effect waves-light btn amber darken-3 black-text text_button col s12 tp-mrgn1" style="z-index: 0">Search</a> </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CUSTOMER SATISFACTION -->
+<div class="z-depth-1 white hide-on-small-only">
+  <div class="row">
+    <div class="col s12 m4 l4 nt-right-bdr">
+      <div class="col s2 m3 l3"> <img src="images/icons/secure.png" alt="secure" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Secure incredible value</h5>
+        <p class="light banner_price text-black ">Best Price Guarantee</p>
+      </div>
+    </div>
+    <div class="col s12 m4 l4 nt-right-bdr">
+      <div class="col s2 m3 l3"> <img src="images/icons/booking.png" alt="booking" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Booking with ease</h5>
+        <p class="light banner_price text-black ">Booking With Ease</p>
+      </div>
+    </div>
+    <div class="col s12 m4 l4">
+      <div class="col s2 m3 l3"> <img src="images/icons/satisfication.png" alt="satisfication" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Customer Satisfaction</h5>
+        <p class="light banner_price text-black ">Superier Customer Service, 24/7</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MIDDLE CONTENT START -->
+
+<div class="container hide-on-small-only">
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <div class="left promotion_space">
+        <h5 class="lighten-2 right Promotion">Promotions</h5>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable card_block">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/offer1.jpg"> </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable card_block">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/offer2.jpg"> </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable card_block">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/offer3.jpg"> </div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m12 l12">
+      <div class="left promotion_space">
+        <h5 class="lighten-2 right Promotion">Top Flight Deals</h5>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr2.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr1.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr3.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr2.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr1.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr3.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr2.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr1.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light"> <img class="activator" src="images/ofr3.png"> </div>
+        <div class="card-content offer"> <span class="card-title activator grey-text text-darken-4 ">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);"> <span class="card-title grey-text text-darken-4">
+          <h2>Best Offer International Flight</h2>
+          <i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- SUBSCRIPTION START -->
+<div id="index-banner" class="parallax-container pattern-overlay hide-on-small-only">
+  <div class="pad-bottom">
+    <div class="container">
+      <div class="row Discount_space"  style="position:relative;z-index:2;">
+        <h5 class="center white-text Discount_size">Get Discount Vouchers, Secret Deals, Sales, Previews and much more!</h5>
+        <div class="col s12 m6 offset-m2">
+          <input type="data" class="black-text input_text" size="50" required placeholder="Enter email">
+        </div>
+        <div class="col s12 m2 left-align"> <a class="waves-effect waves-light btn-large light-blue darken-1 btn-spc">Subscribe</a> </div>
+      </div>
+      <div class="parallax parallax-img" style="z-index:1"><img src="images/gift.png" alt="Unsplashed background img 1" style="display: block; transform:translate3d(-50.1%, 68px, 0px);"></div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER START -->
+<footer class="footer-fixed gradient-45deg-purple-deep-orange white footer_margin ftr-txt hide-on-small-only">
+  <div class="ftr-bg">
+    <div class="container-home">
+      <div class="round-icn" id="pbtn"><a id="menu" class="btn btn-floating btn-small blue"><i class="fa icochan plus-icon fal fa-plus small"></i></a> </div>
+      <div class="section" id="ftr1">
+        <div class="row">
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">Company</li>
+              <li><a href="#" >About us</a></li>
+              <li><a href="#" >Board Of Directors</a></li>
+              <li><a href="#" >Press</a></li>
+              <li><a href="#" >Investors</a></li>
+              <li><a href="#" >About us</a></li>
+              <li><a href="#" >Board Of Directors</a></li>
+              <li><a href="#" >Press</a></li>
+              <li><a href="#" >Investors</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">Product &amp; Services</li>
+              <li><a href="#" >Flights</a></li>
+              <li><a href="#" >Holidays</a></li>
+              <li><a href="#" >Flights</a></li>
+              <li><a href="#" >Holidays</a></li>
+              <li><a href="#" >Flights</a></li>
+              <li><a href="#" >Holidays</a></li>
+              <li><a href="#" >Flights</a></li>
+              <li><a href="#" >Holidays</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">Support</li>
+              <li><a href="#" >Contact</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Contact</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Contact</a></li>
+              <li><a href="#" >Blog</a></li>
+              <li><a href="#" >Contact</a></li>
+              <li><a href="#" >Blog</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">Policies &amp; Terms</li>
+              <li><a href="#" >CSR Policy</a></li>
+              <li><a href="#" >Privacy Policy</a></li>
+              <li><a href="#" >Terms of use</a></li>
+              <li><a href="#" >Privacy Policy</a></li>
+              <li><a href="#" >CSR Policy</a></li>
+              <li><a href="#" >Privacy Policy</a></li>
+              <li><a href="#" >Terms of use</a></li>
+              <li><a href="#" >Privacy Policy</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">Top Domestic routes</li>
+              <li><a href="#" >Bangalore Mumbai Flights</a></li>
+              <li><a href="#" >Bangalore Pune flights</a></li>
+              <li><a href="#" >Pune Delhi flights</a></li>
+              <li><a href="#" >Chennai Goa flights</a></li>
+              <li><a href="#" >Bangalore Mumbai Flights</a></li>
+              <li><a href="#" >Bangalore Pune flights</a></li>
+              <li><a href="#" >Pune Delhi flights</a></li>
+              <li><a href="#" >Chennai Goa flights</a></li>
+            </ul>
+          </div>
+          <div class="col l2 m4 s6">
+            <ul>
+              <li class="black-text text_footer spc-btm">More Links</li>
+              <li><a href="#" >GoAir</a></li>
+              <li><a href="#" >SpiceJet</a></li>
+              <li><a href="#" >Jet Airways</a></li>
+              <li><a href="#" >Air India</a></li>
+              <li><a href="#" >GoAir</a></li>
+              <li><a href="#" >SpiceJet</a></li>
+              <li><a href="#" >Jet Airways</a></li>
+              <li><a href="#" >Air India</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+  <div class="container-home">
+    <div class="row rmv-mrgn">
+      <div class="col l3 m3 s12 accept_card">
+        <ul class="weAcceptFooter">
+          <li class="black-text text_footer spc-btm">We Accept</li>
+          <li><i class="fa fa-cc-visa left icon-clr isz" title="Visa"></i></li>
+          <li><i class="fa fa-cc-mastercard left icon-clr isz" title="Master Card"></i></li>
+          <li><i class="fa fa-cc-amex left icon-clr isz" title="American Express"></i> </li>
+          <li><i class="fa fa-credit-card left icon-clr isz" title="American Express"></i> </li>
+        </ul>
+      </div>
+      <div class="col l4 m3 s12 accept_card">
+        <div class="social-icons-footer">
+          <ul class="weAcceptFooter">
+            <li class="black-text text_footer spc-btm">Partner</li>
+            <li><i class="fa fa-cc-visa left icon-clr isz" title="Visa"></i></li>
+            <li><i class="fa fa-cc-mastercard left icon-clr isz" title="Master Card"></i></li>
+            <li><i class="fa fa-cc-amex left icon-clr isz" title="American Express"></i> </li>
+            <li><i class="fa fa-credit-card left icon-clr isz" title="American Express"></i> </li>
+          </ul>
+        </div>
+      </div>
+      <div class="col l2 m3 s6 feedback_btn">
+        <h6 class="black-text text_footer spc-btm">Got Feedback</h6>
+        <!--<a class="waves-effect waves-light btn indigo darken-4 white-text give_rating" >Give us a rating</a>-->
+        <button class="btn waves-effect waves-light give_rating fb-btn-clr" type="submit" name="action">Give us a rating</button>
+      </div>
+      <div class="col l3 m3 s12 accept_card">
+        <div class="social-icons-footer">
+          <ul class="weAcceptFooter">
+            <li class="black-text text_footer spc-btm">Connect with us</li>
+            <li class="left "><a href="#" target="_blank"><i class="fa fa-facebook fa-lg icon-clr isz"></i></a></li>
+            <li class="left"><a href="#" target="_blank"><i class="fa fa-twitter fa-lg icon-clr isz"></i></a></li>
+            <li class="left"><a href="#" target="_blank"><i class="fa fa-youtube fa-lg icon-clr isz"></i></a></li>
+            <li class="left"><a href="#" target="_blank"><i class="fa fa-instagram fa-lg icon-clr isz"></i></a></li>
+            <li class="left"><a href="#" target="_blank"><i class="fa fa-google-plus fa-lg icon-clr isz"></i></a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="divider"></div>
+</footer>
+<div class="footer-copyright center lighten-3 hide-on-small-only">
+  <div class="container section"><span class="footer_text"> © 2016 <a class="blue-grey-text" href="#">TravelEasy.com</a> All rights reserved.</span></div>
+</div>
+<div class="container Flying_From_flight" style="display:none;">
+  <div class="row">
+    <div class="before"></div>
+    <div class="col s6 m4 l3 mrg-spc tp-spc1 z-depth-3 card flight-search scrollbar padd0 StickyHeader city_box_From" id="style-7">
+      <ul>
+        <!--<div class="scroll-bar vertical">
+			<div class="mCustomScrollbar"></div>
+			</div>-->
+        <h6 class="center grey-text city_btm_spc"><b>TOP CITIES</b></h6>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2> New Delhi <span class="caps">(DEL)</span> </h2>
+              <span>Indira Gandhi</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container Flying_To_flight" style="display: none;">
+  <div class="row">
+    <div class="before_city_box_To"></div>
+    <div class="col s6 m4 l3 mrg-spc tp-spc1 z-depth-3 card flight-search scrollbar padd0 StickyHeader city_box_To" id="style-7">
+      <ul>
+        <!--<div class="scroll-bar vertical">
+			<div class="mCustomScrollbar"></div>
+			</div>-->
+        
+        <h6 class="center grey-text city_btm_spc"><b>TOP CITIES</b></h6>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+        <li>
+          <div class="row city_row">
+            <div class="col s9 m9">
+              <h2>Bangalore <span class="caps">(BLR)</span> </h2>
+              <span>Bengaluru</span></div>
+            <div class="col s3 m3 right-align tp-spc1"><span>India</span></div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="container Flying_agebox" style="display: none;"> 
+  <!--   Icon Section   -->
+  <div class="row">
+    <div class="before_age"></div>
+    <div class="section col s6 m4 l2 z-depth-3 card padd0 age_box">
+      <div class="col m12 s12 l12 tp-spc1">
+        <div class="col m5 s5 l5">
+          <p>Adult:</p>
+        </div>
+        <div class="col m7 s7 l7 plus-minus-input">
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="minus" data-field="quantity"> <i class="fa fa-minus" aria-hidden="true"></i> </button>
+          </div>
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="plus" data-field="quantity"> <i class="fa fa-plus" aria-hidden="true"></i> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col m12 s12 l12 tp-spc1">
+        <div class="col m5 s5 l5">
+          <p>Child:</p>
+        </div>
+        <div class="col m7 s7 l7 plus-minus-input">
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="minus" data-field="quantity"> <i class="fa fa-minus" aria-hidden="true"></i> </button>
+          </div>
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="plus" data-field="quantity"> <i class="fa fa-plus" aria-hidden="true"></i> </button>
+          </div>
+        </div>
+      </div>
+      <div class="col m12 s12 l12 tp-spc1">
+        <div class="col m5 s5 l5">
+          <p>Infant:</p>
+        </div>
+        <div class="col m7 s7 l7 plus-minus-input">
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="minus" data-field="quantity"> <i class="fa fa-minus" aria-hidden="true"></i> </button>
+          </div>
+          <div class="col m6 s6 l6">
+            <button class="btn-flat waves-effect waves-light grey lighten-2 tp-spc1 btn-customize btn-age" data-quantity="plus" data-field="quantity"> <i class="fa fa-plus" aria-hidden="true"></i> </button>
+          </div>
+        </div>
+      </div>
+      <form>
+        <span class="col m12 s12  tp-spc1">
+        <input class="with-gap black" name="group1" type="radio" id="test1"  />
+        <label for="test1" class="black-text">Economy</label>
+        </span> <span class="col m12 s12">
+        <input class="with-gap" name="group1" type="radio" id="test2" />
+        <label for="test2" class="black-text">Premium Economy</label>
+        </span> <span class="col m12 s12">
+        <input class="with-gap" name="group1" type="radio" id="test3"  />
+        <label for="test3" class="black-text">Business</label>
+        </span> <span class="col m12 s12">
+        <input class="with-gap" name="group1" type="radio" id="test4" />
+        <label for="test4" class="black-text">First Class</label>
+        </span>
+      </form>
+      <div class="row"> <a class="waves-effect waves-light btn right traveller_btn">Done</a> </div>
+    </div>
+  </div>
+</div>
+<!--Import jQuery before materialize.js--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script>
+  $('.dropdown-button2').dropdown({
+      inDuration: 300,
+      outDuration: 225,
+      constrain_width: false, // Does not change width of dropdown to that of the activator
+      hover: true, // Activate on hover
+      gutter: ($('.dropdown-content').width()*3)/2.5 + 5, // Spacing from edge
+      belowOrigin: true, // Displays dropdown below the button
+      alignment: 'right' // Displays dropdown with edge aligned to the left of button
+	 
+    }
+  );
+</script>
+<script type="text/javascript" src="js/init.js"></script> 
+<script>
+$(document).ready(function(){
+ var boxWidth = $ (".mbl-shw").width();
+   $(".mbl-shw").mouseenter(function(){
+	  $(".nvicn,.nvtxt").css ({position:"relative"});	 
+	  $(this).animate({width:'270px'}, "slow"); 
+	  $(".nvicn,.nvtxt").show("slow");
+	  });
+  $(".mbl-shw").mouseleave(function(){
+	  $(".nvicn").css ({position:"static"});	 
+	  $(this).animate({width:'90px'}, "slow"); 
+	  $(".nvtxt").hide("slow");
+	  });
+	 //MOBILE VIEW BELLOW CODE 
+	 // var boxWidth = $ (".mbl-view").width();
+  // $(".mbl-view").mouseenter(function(){
+	 // $(".nvicn,.nvtxt").css ({position:"relative"});	 
+	//  $(this).animate({width:'90px'}, "slow"); 
+	  //$(".nvicn,.nvtxt").show("slow");
+	 // });
+  //$(".mbl-view").mouseleave(function(){
+	//  $(".nvicn").css ({position:"static"});	 
+	 // $(this).animate({width:'90px'}, "slow"); 
+	 // $(".nvtxt").hide("slow");
+	//  });
+});
+</script>
+</body>
+</html>

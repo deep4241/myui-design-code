@@ -1,0 +1,3309 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TravelEasy</title>
+</head>
+<body>
+<!-- Start Page Loading -->
+<div id="loader-wrapper"></div>
+<nav class="white hide-on-small-and-down" role="navigation">
+  <div class="nav-wrapper container"> <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn"><i class="material-icons">menu</i></a> <a id="logo-container" href="#" class="brand-logo"><img width="170" src="images/logo.svg" alt="traveleasy"></a>
+    <ul class="hide-on-med-and-down tp-nav nav-lft-spc">
+      <li><a href="#" class="active"><i class="fa fa-plane right-spc tinny"></i>Flight</a></li>
+      <li><a href="#"><i class="fa fa-gift right-spc tinny"></i>Offer</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down text-size2">
+      <li><a href="#"> <i class="fa fa-clock-o right-spc"></i>Easy Support</a></li>
+      <li> <a class = " dropdown-button padd0" href = "#" data-activates = "dropdown"> <i class="fa fa-user-circle-o right-spc"></i>Sign/SignUp<i class ="mdi-navigation-arrow-drop-down right"></i></a>
+        <ul id= "dropdown" class = "dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Easy Support</a></li>
+      <li><a href="#">Sign/SignUp</a></li>
+    </ul>
+  </div>
+</nav>
+<div class="full-width hide-on-med-and-up">
+<div class="row white spc-div bdr-div spc-rmv padd0 ">
+    <div class="col s12 m12 padd0 heador mobile-head">
+      <div class="col s2 m2 padd0"><span class="grey lighten-2"><i class="fa fa-arrow-left" aria-hidden="true"></i></span></div>
+      <div class="col s8 m8 padd0">
+        <p class="center-align spc-div">Delhi <i class="fa fa-long-arrow-right" aria-hidden="true"></i>Mumbai</p>
+        <p class="center-align"><i class="fa fa-plane" aria-hidden="true"></i>Fri, 23 Dec <i class="fa fa-plane dipartu"></i> Sun, 25 Dec</p>
+      </div>
+      <div class="col s2 padd0 right-align"><span class="grey lighten-2"><i class="fa fa-filter fillterto" aria-hidden="true"></i></span></div>
+    </div>
+</div>
+</div>
+<div class="container">
+  <div class="section tp-spc-rmvm2"> 
+    <!--   Icon Section   -->
+    <div class="row white spc-div bdr-div spc-rmv hide-on-small-only">
+      <div class="col s12 m3 borlef">
+        <p class="fligtway">ONE WAY</p>
+        <ul class="flitone">
+          <li>
+            <p class="tername">New Delhi</p>
+            <p class="tercode">(DEL)</p>
+          </li>
+          <li class="arronex hide-on-med-and-down"> <br>
+            <p class="flitnext"><i class="fa fa-long-arrow-right"></i></p>
+          </li>
+          <li>
+            <p class="tername">Mumbai</p>
+            <p class="tercode">(BOM)</p>
+          </li>
+        </ul>
+      </div>
+      <div class="col s12 m4 borlef">
+        <ul class="flitone">
+          <li>
+            <p class="fligtway">DEPARTURE</p>
+            <i class="inside fa fa-calendar hide-on-med-and-down"></i>
+            <p class="datename">06 <span class="daycode"> OCT 16 <span class="dinn">THU</span></span></p>
+          </li>
+          <li class="arronex spc-left1"> <br>
+            <br>
+            <p class="flitnext"><i class="fa fa-chevron-right"></i></p>
+          </li>
+          <li>
+            <p class="fligtway">RETURN</p>
+            <i class="inside deactive fa fa-calendar hide-on-med-and-down"></i>
+            <p class="datename deactive">06<span class="daycode">OCT 16 <span class="dinn">THU</span></span></p>
+          </li>
+        </ul>
+      </div>
+      <div class="col s12 m2 ">
+        <p class="fligtway">TRAVELLER</p>
+        <h4 class="pacecount">01</h4>
+        <p class="pacecount hide-on-med-and-down">(1 Adult, 0 Child, 0 Infant)</p>
+      </div>
+      <div class="col s12 m1 hide-on-med-only">&nbsp;</div>
+      <div class="col s12 m2 right-align "> <a class="btn-flat waves-effect waves-light grey lighten-2 center-align tp-spc1 btn-customize" id="modifysearhc"> <i class="fa fa-search right-spc tinny"></i>Modify Search</a> </div>
+    </div>
+    <div class="row white spc-div bdr-div spc-rmv hide-on-small-only" id="file-open01">
+      <div class="col s12 m12">
+        <div class="col s12 m4 padd0">
+          <ul class="air-classes">
+            <li class="tab col s6 m6 center-align padd0"><a class="black-text waves-effect waves-light active center-align" href="#sapien">ONE WAY</a></li>
+            <li class="tab col s6 m6 center-align padd0"><a class="black-text waves-effect waves-light center-align" href="#activeone">RETURN</a></li>
+          </ul>
+        </div>
+        <div class="col s12 m8 btm-clm-spc"> <a href="#" id="modifysearhc1"><i class="material-icons dp48 right">close</i></a> </div>
+        <div class="col s12 m12 padd0">
+          <form class="col s12 spc-rmv-left">
+            <div class="row spc-rmv">
+              <div class="input-field col s12 m3 srch-spc">
+                <input id="name" type="text" class="icon_plane">
+                <i class="material-icons material_flight">flight_takeoff</i>
+                <label for="first_name" class="form_icon">Flying From</label>
+              </div>
+              <div class="input-field col s12 m3 srch-spc">
+                <input id="email" type="email">
+                <i class="material-icons material_flight">flight_land</i>
+                <label for="email" class="form_icon">Flying To</label>
+              </div>
+              <div class="input-field col s12 m3 srch-spc">
+                <input id="date-demo1" type="text" class="date_shift datepicker">
+                <i class="material-icons material_flight">date_range</i>
+                <label for="date_demo1" class="form_icon">Departing</label>
+              </div>
+              <div class="input-field col s12 m3 srch-spc">
+                <input id="date-demo1" type="text" class="date_shift datepicker">
+                <i class="material-icons material_flight">date_range</i>
+                <label for="date_demo1" class="form_icon">Returning</label>
+              </div>
+            </div>
+            <div class="row btm-spc">
+              <div class="input-field col m4 l2">
+                <label class="text_size">Adult: 12+ YRS</label>
+                <input type="button"  value='-' class='col m3 qtyminus_plus minus'/>
+                <input type='text'  value='1' id="quantity" class='col m6 qty plus_minus' />
+                <input type="button" value='+' class='col m3 qtyminus_plus btn_plus plus'/>
+              </div>
+              <div class="input-field col m4 l2">
+                <label class="text_size">Child: 2-12 YRS</label>
+                <input type="button"  value='-' class='col m3 qtyminus_plus' field='quantity' />
+                <input type='text'  value='0'  class='col m6 qty plus_minus' />
+                <input type="button" value='+' class='col m3 qtyminus_plus btn_plus' field='quantity' />
+              </div>
+              <div class="input-field col m4 l2">
+                <label class="text_size">Infant: 0-2 YRS</label>
+                <input type="button"  value='-' class='col m3 qtyminus_plus' field='quantity' />
+                <input type='text' value='0' class='col m6 qty plus_minus' />
+                <input type="button" value='+' class='col m3 qtyminus_plus btn_plus' field='quantity' />
+              </div>
+              <div class="col m6 l3 tp-spc2">
+                <label for="crole"></label>
+                <select class="browser-default valid select_economy bdr-rw" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+                  <option value="1" selected="">Economy</option>
+                  <option value="2">Premium Economy</option>
+                  <option value="3">Business</option>
+                </select>
+              </div>
+              <div class="col m6 l3 modify_search">
+                <button class="btn-flat waves-effect waves-light amber accent-4 center-align col s12 mdfy-btn" type="submit" name="action">Search <i class="mdi-content-send right"></i> </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+    <div class="row spc-rmv spc-link hide-on-small-only">
+      <div class="col s12 m4 right right-align ">
+        <p class="pagint"><a href="javascript:void(0)"><i class="fa fa-caret-left" aria-hidden="true"></i> Previous Day</a> | <a href="javascript:void(0)">Next Day &nbsp;<i class="fa fa-caret-right" aria-hidden="true"></i></a></p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3 lft-rmv right-rmv hide-on-med-and-down scrollwin">
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm2">
+          <div class="filter_subdivisions">
+            <h3 class="fillheadSub"><a href="#" class="refine-reslt01">Refine Result <strong>DEL to BOM</strong> <i class="fa fa-chevron-down" aria-hidden="true"></i></a></h3>
+            <div class="refine-reslt1"> <a href="">New Delhi to Mumbai</a> <a href="">Mumbai to New Delhi</a> </div>
+            <p class="spc-btm1">No. of Stops</p>
+            <span class="onew"> <a class="btn btn waves-effect waves-light grey lighten-3 black-text" href="javascript:void(0)">0</a> <span><i class="fa fa-inr" aria-hidden="true"></i>45642</span> </span> <span class="onew"><a class="btn waves-effect waves-light grey lighten-3 black-text" href="javascript:void(0)">1</a><span><i class="fa fa-inr" aria-hidden="true"></i>45642</span></span> <span class="onew"><a class="btn btn waves-effect grey lighten-3 black-text" href="javascript:void(0)">+2</a></span> </div>
+        </div>
+        
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm2">
+          <div class="filter_subdivisions mortin">
+            <h3 class="fillheadSub">Departure Time</h3>
+            <a href="">
+            <p><span class="morning_icon"></span><br>
+              Before 6AM </p>
+            </a> <a class="active1" href="">
+            <p><span class="noon_icon"></span><br>
+              6AM - 12PM </p>
+            </a> <a href="">
+            <p><span class="evening_icon"></span><br>
+              12PM - 6PM </p>
+            </a> <a href="">
+            <p><span class="night_icon"></span><br>
+              After 6PM </p>
+            </a> </div>
+        </div>
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm2">
+          <div class="filter_subdivisions mortin">
+            <h3 class="fillheadSub">Airlines</h3>
+            <p class="form-group">
+              <input type="checkbox" id="test5" class="filled-in"/>
+              <label for="test5"> Air Asia <span class="right right-spc"><span class="AirLogovsm Al1_vsm"></span></span> </label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test6" class="filled-in"/>
+              <label for="test6"> Indigo<span class="right right-spc"> <span class="AirLogovsm Al2_vsm"></span></span> </label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test7" class="filled-in"/>
+              <label for="test7"> Air India<span class="right right-spc"> <span class="AirLogovsm Al3_vsm"></span></span> </label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test8" class="filled-in"/>
+              <label for="test8"> Go Air <span class="right right-spc"> <span class="AirLogovsm Al4_vsm"></span></span> </label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test9" class="filled-in"/>
+              <label for="test9"> Spicejet<span class="right right-spc"> <span class="AirLogovsm Al5_vsm"></span></span> </label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test10" class="filled-in"/>
+              <label for="test10"> Vistara <span class="right right-spc"> <span class="AirLogovsm Al6_vsm"></span></span> </label>
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm2">
+          <div class="filter_subdivisions">
+            <h3 class="fillheadSub">Pricing Range</h3>
+            <form action="#">
+              <p class="range-field">
+                <input type="range" id="test5" min="0" max="100" />
+              </p>
+            </form>
+          </div>
+        </div>
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm2">
+          <div class="filter_subdivisions mortin">
+            <h3 class="fillheadSub">CHECK-IN BAGGAGE</h3>
+            <p class="form-group">
+              <input type="checkbox" id="test5" />
+              <label for="test5">Baggage</label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test5" />
+              <label for="test5">No Baggage</label>
+            </p>
+          </div>
+        </div>
+        <div class="col s12 m12 white spc-div bdr-div spc-div-2 spc-btm">
+          <div class="filter_subdivisions mortin">
+            <h3 class="fillheadSub">IN-FLIGHT MEALS</h3>
+            <p class="form-group">
+              <input type="checkbox" id="test5" />
+              <label for="test5">Meals</label>
+            </p>
+            <p class="form-group">
+              <input type="checkbox" id="test5" />
+              <label for="test5">No Meals</label>
+            </p>
+          </div>
+        </div>
+        
+      </div>
+      <div class="col s12 m9 right-rmv width-full-list box-spc-rmv scrollwin3 ">
+        <div class="row spc-rmv">
+          <div class="col s6 m6 right-rmv">
+            <div class="col s12 m12 white bdr-div btm-spc">
+              <ul class="tabs tabs-icon">
+                <li class="tab col s2 m2"><a href="#testa" class="padd0"><i class="fa fa-list right-spc text-size3"></i><span class="hide-on-med-and-down">Air</span></a></li>
+                <li class="tab col s2 m2"><a href="#testb" class="padd0"><i class="fa fa-plane right-spc text-size3"></i><span class="hide-on-med-and-down">Dep</span></a></li>
+                <li class="tab col s2 m2 hide-on-med-and-down"><a href="#testc" class="padd0"><i class="fa fa-clock-o right-spc text-size3"></i><span class="hide-on-med-and-down">Dur</span></a></li>
+                <li class="tab col s2 m2"><a href="#testd" class="padd0"><i class="fa fa-plane dipartu right-spc text-size3 right-spc "></i><span class="hide-on-med-and-down">Arr</span></a></li>
+                <li class="tab col s2 m2 hide-on-small-only spacermv"><a href="#teste" class="padd0 right-align"><i class="fa fa-inr right-spc text-size3"></i><span class="hide-on-med-only">Price</span></a> </li>
+                <li class="tab col s2 m2 hide-on-small-only scrollfilter" id="chkfilter"><a href=""><i class="fa fa-filter"></i></a></li>
+              </ul>
+              <!-- filter -->
+              <div id="flight-filter">
+                <h5>Refine Result </h5>
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s12 m12">
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Airlines</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="remote" id="remote" value="1">
+                            <label for="remote" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="virtual_wall" id="virtual_wall" value="1">
+                            <label for="virtual_wall" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="fall_protection" id="fall_protection" value="1">
+                            <label for="fall_protection" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="remote" id="remote" value="1">
+                            <label for="remote" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="virtual_wall" id="virtual_wall" value="1">
+                            <label for="virtual_wall" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="fall_protection" id="fall_protection" value="1">
+                            <label for="fall_protection" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>No. of Stops</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 0 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 1 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 2 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 2 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 3 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 4 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 5 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 6 Stop</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Price Range</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Departure Time</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>In-Flight Meals</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result">Meals</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result">No Meals</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- filter end--> 
+            </div>
+          </div>
+          <div class="col s6 m6 right-rmv">
+            <div class="col s12 m12 white bdr-div btm-spc">
+              <ul class="tabs tabs-icon">
+ <li class="tab col s2 m2"><a href="#testa" class="padd0"><i class="fa fa-list right-spc text-size3"></i><span class="hide-on-med-and-down">Air</span></a></li>
+ <li class="tab col s2 m2"><a href="#testb" class="padd0"><i class="fa fa-plane right-spc text-size3"></i><span class="hide-on-med-and-down">Dep</span></a></li>
+ <li class="tab col s2 m2 hide-on-med-and-down"><a href="#testc" class="padd0"><i class="fa fa-clock-o right-spc text-size3"></i><span class="hide-on-med-and-down">Dur</span></a></li>
+ <li class="tab col s2 m2"><a href="#testd" class="padd0"><i class="fa fa-plane dipartu right-spc text-size3 right-spc "></i><span class="hide-on-med-and-down">Arr</span></a></li>
+ <li class="tab col s2 m2 hide-on-small-only spacermv"><a href="#teste" class="padd0 right-align"><i class="fa fa-inr right-spc text-size3"></i><span class="hide-on-med-only">Price</span></a> </li>
+                <li class="tab col s2 m2 hide-on-small-only scrollfilter" id="chkfilter1"><a href="#"><i class="fa fa-filter" aria-hidden="true"></i></a></li>
+              </ul>
+              <!-- filter -->
+              <div id="flight-filter1">
+                <h5>Refine Result </h5>
+                <div class="modal-content">
+                  <div class="row">
+                    <div class="col s12 m12">
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Airlines</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="remote" id="remote" value="1">
+                            <label for="remote" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="virtual_wall" id="virtual_wall" value="1">
+                            <label for="virtual_wall" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="fall_protection" id="fall_protection" value="1">
+                            <label for="fall_protection" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="remote" id="remote" value="1">
+                            <label for="remote" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="virtual_wall" id="virtual_wall" value="1">
+                            <label for="virtual_wall" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                          <li>
+                            <input onclick="this.form.submit()" type="checkbox" name="fall_protection" id="fall_protection" value="1">
+                            <label for="fall_protection" class="refine-result"> <i class="fa fa-plane"></i> Jet Airways</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>No. of Stops</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 0 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 1 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 2 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 2 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 3 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 4 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 5 Stop</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-universal-access"></i> 6 Stop</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Price Range</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"> <i class="fa fa-inr"></i> 2000 - <i class="fa fa-inr"></i> 3000</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>Departure Time</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result"><i class="fa fa-clock-o" aria-hidden="true"></i> 12AM - <i class="fa fa-clock-o" aria-hidden="true"></i> 06AM</label>
+                          </li>
+                        </ul>
+                      </div>
+                      <div class="col s6 m4">
+                        <ul>
+                          <li>
+                            <h6>In-Flight Meals</h6>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result">Meals</label>
+                          </li>
+                          <li>
+                            <input onclick="" type="checkbox" name="programming" id="programming" value="1">
+                            <label for="programming" class="refine-result">No Meals</label>
+                          </li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- filter end--> 
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col s12 m9 right-rmv width-full-list box-spc-rmv scrollwin2">
+        <div class="row">
+          <div class="col s6 m6 right-rmv list-scroll">
+            <h6 class="text-size2 hide-on-small-and-down"><i class="fa fa-plane " aria-hidden="true"></i> Delhi (DEL) to Mumbai (BOM) - Fri, 23 Dec</h6>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al8_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al8_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+          </div>
+          <div class="col s6 m6 list-scroll right-rmv">
+            <h6 class="text-size2 hide-on-small-and-down"><i class="fa fa-plane dipartu " aria-hidden="true"></i> Mumbai (BOM) &nbsp;to Delhi (DEL) - Fri, 23 Dec</h6>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al4_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al7_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al3_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al4_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al6_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+            <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc select-fight1">
+              <div class="col s3 m1 padd0">
+                <div class="preloader-wrapper small" style="position:absolute">
+                  <div class="spinner-layer spinner-green-only">
+                    <div class="circle-clipper left">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="gap-patch">
+                      <div class="circle"></div>
+                    </div>
+                    <div class="circle-clipper right">
+                      <div class="circle"></div>
+                    </div>
+                  </div>
+                </div>
+                <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al5_sm"></span> </span> 6E-96 &nbsp; </p>
+              </div>
+              <div class="col s3 m3 padd0 right-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+              </div>
+              <div class="col s3 m3 padd0 center arrosec1">
+                <p class="hide-on-med-and-down">02h 10m</p>
+                <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                <p class="hide-on-med-and-down">1 Stop</p>
+              </div>
+              <div class="col s3 m3 padd0 left-align">
+                <p class="timeflir">05:30 <br>
+                  <span class="hide-on-med-and-down">Mumbai</span> <span class="hide-on-large-only">Stop</span> </p>
+              </div>
+              <div class="col s12 m2 right-align padd0 tp-spc1">
+                <p class="listprice1 listprice2 v-smfnt"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p>
+              </div>
+              <!--<div class="col s2 m2 padd0 hide-on-med-and-up">&nbsp;</div>--> 
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btm-price-sticky hide-on-small-and-down">
+  <div class="container z-depth-1" id="flight-details">
+    <div class="row rmv-mrgn">
+      <div class="col s12 m6">&nbsp;</div>
+      <div class="col s12 m12 z-depth-1 arrow_box"><!--flight details -->
+        <div class="row">
+          <div class="col s12 padd0">
+            <ul class="tabs ">
+              <li class="tab col s2 m2"> <a href="#test1" class="active tab-txt padd0"> <i class="fa fa-plane hide-on-med-and-up text-size3" a=""></i> <span class="hide-on-small-only"> Flight details</span> </a> </li>
+              <li class="tab col s2 m2"> <a  href="#test2" class="tab-txt padd0"> <i class="fa fa-plane hide-on-med-and-up text-size3 dipartu" a=""></i> <span class="hide-on-small-only">Fare details</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#test3" class="tab-txt padd0"> <i class="fa fa-briefcase hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Baggage details</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#test4" class="tab-txt padd0"> <i class="fa fa-times hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only">Cancellation fee</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#test0" class="tab-txt padd0"> <i class="fa fa-calenda hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Date change fee </span> </a> </li>
+              <!-- <a href="javascript:void(0)" id="close01"><i class="material-icons dp48 right">close</i></a>-->
+              
+            </ul>
+          </div>
+          <div id="test1" class="active">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <p class="collections-title ">
+                  <h4 class="item-header spc-rmv2 hide-on-small-and-down">New Delhi to Mumbai 10 Oct 16, Fri</h4>
+                  </p>
+                  <div class="col s2 m2 padd0">
+                    <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                      6E-96 &nbsp; </p>
+                  </div>
+                  <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                  <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                    <div class="col s6 m6 padd0 left-align">
+                      <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                    </div>
+                    <div class="col s6 m6 padd0 right-align">
+                      <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                    </div>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >Indira Gandhi International Airport </span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                    <p>02h 10m</p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>1 Stop</p>
+                  </div>
+                  <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only pacecount">Refundable</div>
+                  <div class="col s12 m12">
+                                          <div class="stopway col s6 m6 padd0">
+                                             <p class="flightsigm flightsigm width-full spc-btm col m12 offset-m6 grid-example">
+                                                <span>Plane change at Hyderabad | Waiting: 1h 10m</span>
+                                             </p>
+                                          </div>
+                                       </div>
+                </div>
+                <div class="row spc-rmv">
+                  <h4 class="item-header spc-rmv2 hide-on-small-and-down">Mumbai to New Delhi Mumbai 10 Oct 18, Fri</h4>
+                  <div class="col s2 m2 padd0">
+                    <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo</span> <br>
+                      6E-96 &nbsp; </p>
+                  </div>
+                  <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                  <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                    <div class="col s6 m6 padd0 left-align">
+                      <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                    </div>
+                    <div class="col s6 m6 padd0 right-align">
+                      <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                    </div>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >Indira Gandhi International Airport</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                    <p>02h 10m</p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>1 Stop</p>
+                  </div>
+                  <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only pacecount">Refundable</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="test2">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="test3">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Adult</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Child</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Infant</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="test4">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="test0">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">Per Passenger Fee</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">30-365 days </span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"><i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">7-30 days</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">2-7 days </span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--flight details end--></div>
+  </div>
+  <div class="sticky-bg">
+    <div class="container">
+      <div class="row rmv-mrgn">
+        <div class="col m4 s12 btm-right-bdr spc-div spc-div-2 lft-rmv">
+          <div class="col s12 m2 lft-rmv"><span class="AirLogo Al2_sm"></span><!--<span class="fnt-color flight-nm">6E-96 </span>--></div>
+          <div class="col m2">
+            <p class="timeflir wt-fnt">05:30 <br>
+              <span class="fnt-color">DEL</span></p>
+          </div>
+          <div class="col m5 center-align timeflir arrosec1">
+            <p class="hide-on-med-and-down fnt-color">02h 10m</p>
+            <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only"></i>
+            <p class="hide-on-med-and-down fnt-color">1 Stop</p>
+          </div>
+          <div class="col m3 ">
+            <p class="timeflir wt-fnt">05:30 <br>
+              <span class="fnt-color">BOM</span> </p>
+          </div>
+          <!--<div class="col s12 m2 padd0"><p class="listprice1 listprice2 v-smfnt center-align"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p></div>--> 
+        </div>
+        <div class="col m4 s12 btm-right-bdr spc-div spc-div-2 lft-rmv">
+          <div class="col s12 m2 lft-rmv"><span class="AirLogo Al2_sm"></span><!-- <span class=" fnt-color flight-nm">6E-96 </span>--></div>
+          <div class="col m2">
+            <p class="timeflir wt-fnt">05:30 <br>
+              <span class="fnt-color">DEL</span> </p>
+          </div>
+          <div class="col m5 center-align timeflir arrosec1">
+            <p class="hide-on-med-and-down fnt-color">02h 10m</p>
+            <img class="img-responsive img-cen hide-on-med-and-down tow-img" src="images/long-arrow.png"> <i class="fa fa-long-arrow-right hide-on-large-only"></i>
+            <p class="hide-on-med-and-down fnt-color">1 Stop</p>
+          </div>
+          <div class="col m3 ">
+            <p class="timeflir wt-fnt">05:30 <br>
+              <span class="fnt-color">BOM</span> </p>
+          </div>
+          <!--<div class="col s12 m2 padd0"><p class="listprice1 listprice2 v-smfnt center-align"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </p></div>--> 
+        </div>
+        <div class="col m4 s12 spc-div spc-div-2 ">
+          <div class="row rmv-mrgn">
+            <div class="col m8 s12 center-align ">
+              <p class="listprice4 v-smfnt"> <a href="javascript:void(0)" class="flight-detal flgt-dtl-btn" id="chkdetails"> <!--<span class="flitedet ">Flight Details</span> --><i class="fa icochan fa-plus-square-o"></i> </a> <i class="fa fa-inr"></i> 8,901 </p>
+            </div>
+            <div class="col m4 s12 padd0">
+              <div class="right-align padd0 "> <a class="btn-flat waves-effect waves-light blue darken-4 center-align white-text " id="btn-hide1"> <i class="fa fa-spinner fa-spin "></i> 
+                <!--  <i class="fa fa-circle-o-notch fa-spin"></i>
+                                 <i class="fa fa-refresh fa-spin"></i>--> 
+                <span class="book-now">Book Now</span></a> </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="btm-price-sticky sma-screen hide-on-med-and-up">
+  <div class="width-full" id="flight-detailsM">
+    <div class="row rmv-mrgn">
+      <div class="col s12 m6">&nbsp;</div>
+      <div class="col s12 m12 z-depth-1 arrow_box"><!--flight details -->
+        <div class="row spc-rmv">
+          <div class="col s12 padd0">
+            <ul class="tabs ">
+              <li class="tab col s2 m2"> <a href="#Mflight" class="active tab-txt padd0"> <i class="fa fa-plane hide-on-med-and-up text-size3" a=""></i> <span class="hide-on-small-only"> Flight details</span> </a> </li>
+              <li class="tab col s2 m2"> <a  href="#Mfare" class="tab-txt padd0"> <i class="fa fa-plane hide-on-med-and-up text-size3 dipartu" a=""></i> <span class="hide-on-small-only">Fare details</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#Mbaggage" class="tab-txt padd0"> <i class="fa fa-briefcase hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Baggage details</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#Mcancellation" class="tab-txt padd0"> <i class="fa fa-times hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only">Cancellation fee</span> </a> </li>
+              <li class="tab col s2 m2"> <a href="#Mdate" class="tab-txt padd0"> <i class="fa fa-calenda hide-on-med-and-up text-size3" aria-hidden="true"></i> <span class="hide-on-small-only"> Date change fee </span> </a> </li>
+              <!-- <a href="javascript:void(0)" id="close01"><i class="material-icons dp48 right">close</i></a>-->
+              
+            </ul>
+          </div>
+          <div id="Mflight" class="active">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <p class="collections-title ">
+                  <h4 class="item-header spc-rmv2 hide-on-small-and-down">New Delhi to Mumbai 10 Oct 16, Fri</h4>
+                  </p>
+                  <div class="col s2 m2 padd0">
+                    <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo 6E-96 </span> </p>
+                  </div>
+                  <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                  <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                    <div class="col s6 m6 padd0 left-align">
+                      <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                    </div>
+                    <div class="col s6 m6 padd0 right-align">
+                      <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                    </div>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >Indira Gandhi International Airport </span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                    <p>02h 10m</p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>1 Stop</p>
+                  </div>
+                  <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only">Refundable</div>
+                  <div class="stopway1 col s12 m12 padd0 spc-rmv">
+                    <p class="flightsigm flightsigm width-full spc-btm"> <span>Plane change at Hyderabad | Waiting: 1h 10m</span> </p>
+                  </div>
+                </div>
+                <div class="row spc-rmv">
+                  <h4 class="item-header spc-rmv2 hide-on-small-and-down">Mumbai to New Delhi Mumbai 10 Oct 18, Fri</h4>
+                  <div class="col s2 m2 padd0">
+                    <p class="flightresult"> <span class="left right-spc"> <span class="AirLogo Al2_sm"></span> </span> <span class="flitname">IndiGo 6E-96 </span> </p>
+                  </div>
+                  <div class="col s8 m6 padd0 left-align hide-on-med-and-up"> <span class="city-fontsize"> <strong>New Delhi <i class="fa fa-long-arrow-right"></i> Mumbai </strong> <i class="fa fa-clock-o"></i> 02h 10m </span> </div>
+                  <div class="col s12 m12 padd0 tp-spc1 hide-on-med-and-up">
+                    <div class="col s6 m6 padd0 left-align">
+                      <p class="timeflir">05:30 DEL <span>Indira Gandhi International Airport Delhi</span> </p>
+                    </div>
+                    <div class="col s6 m6 padd0 right-align">
+                      <p class="timeflir">HYD 05:30 <span>Hyderabad Airport Hyderabad</span> </p>
+                    </div>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >Indira Gandhi International Airport</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 center arrosec1 hide-on-small-only">
+                    <p>02h 10m</p>
+                    <i class="fa fa-clock-o" aria-hidden="true"></i>
+                    <p>1 Stop</p>
+                  </div>
+                  <div class="col s2 m2 padd0 left-align hide-on-small-only">
+                    <p class="timeflir">05:30 <br>
+                      <span >New Delhi</span> <span class="hide-on-large-only">02h 10m</span> </p>
+                  </div>
+                  <div class="col s2 m2 padd0 right-align hide-on-small-only pacecount">Refundable</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="Mfare">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="Mbaggage">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Adult</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Child</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s4">
+                    <p class="collections-title"> <span class="item-sub">Infant</span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>7 Kg Cabin </span> </p>
+                  </div>
+                  <div class="col s4">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr"></i>15 Kg Checkin </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="Mcancellation">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">Fare breakup</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">This fare is Refundable</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Base Fare (1 Adult, 0 Children, 0 Infant)</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Fees & Surcharge</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">Total</span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4,249 </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+          <div id="Mdate">
+            <ul class="collection">
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2">DEL - BOM</h4>
+                    </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title">
+                    <h4 class="item-header spc-rmv spc-rmv2 right-align">Per Passenger Fee</h4>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">30-365 days </span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">7-30 days </span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+              <li class="collection-item">
+                <div class="row spc-rmv">
+                  <div class="col s6">
+                    <p class="collections-title"> <span class="item-sub">2-7 days </span> </p>
+                  </div>
+                  <div class="col s6">
+                    <p class="collections-title right-align"> <span class="item-sub"> <i class="fa fa-inr" aria-hidden="true"></i> 4380 + <i class="fa fa-inr" aria-hidden="true"></i> 300* </span> </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
+      <!--flight details end--></div>
+  </div>
+  <div class="sticky-bg">
+    <div class="row rmv-mrgn">
+      <div class="col s12 m5 padd0">
+        <div class="col s12 m12 padd0">
+          <div class="col s4 padd0">
+            <div class="col s12 padd0 spc-tp6">
+              <p class="flightresult"> <span class="left right-spc"> <span class="AirLogovsm Al1_vsm"></span> </span>
+              <div class="col s8 padd0">
+                <p class="btm-tm-sm wt-fnt">13:10&nbsp;-&nbsp;22:20</p>
+                <p class="btm-tm-tim">02h 10m&nbsp;-&nbsp;Stop</p>
+              </div>
+              </p>
+            </div>
+          </div>
+          <div class="col s4 padd0 ">
+            <div class="col s12 padd0 spc-tp6">
+              <p class="flightresult"> <span class="left right-spc"> <span class="AirLogovsm Al1_vsm"></span> </span>
+              <div class="col s8 padd0">
+                <p class="btm-tm-sm wt-fnt">13:10&nbsp;22:20</p>
+                <p class="btm-tm-tim">Stop&nbsp;-&nbsp;02h 10m</p>
+              </div>
+              </p>
+            </div>
+          </div>
+          <div class="col s2 padd0 center-align small-width">
+            <div class="col s12 padd0"> <a href="javascript:void(0)" class="flight-detal spc-tp15 flight-iconP" id="chkdetailsM"><i class="fa icochan fa-plus-square-o"></i> </a> 
+              <!--<a href="javascript:void(0)" class="spc-tp15 flight-iconP" id="chkdetails"> <i class="fa fa-plus-square-o icochan"></i> </a>--> </div>
+          </div>
+          <div class="col s2 padd0 center-align">
+            <div class="col s12 padd0">
+              <button class="btn-flat waves-effect waves-light blue darken-4 center-align white-text mb-prize-btn"><i class="fa fa-inr"></i> 8,901</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--Import jQuery before materialize.js--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>

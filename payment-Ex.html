@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+      <link type="text/css" rel="stylesheet" href="css/custom.css" media="screen,projection"/>
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>TravelEasy</title>
+   </head>
+   <body>
+      <!-- Modal filter -->
+      <div id="modal1-farerule" class="modal">
+         <h5 class="modal-hdr">Fare Rules</h5>
+         <span><a href="#" class="modal-action modal-close modal-clsbtn"><i class="fa fa-close"></i></a></span>
+         <div class="modal-content">
+            <div class="row">
+               <div class="col s12 m12">
+               <h5 class="fare-sbhdng">Cancellation fee (per passenger)</h5>
+                  <table class="bordered fare-reules">
+              <thead>
+                <tr>
+                    <th>Sector</th>
+                    <th>Cancellation Fee</th>
+                    <th>Item Price</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>DEL-GOI</td>
+                  <td><p>24 hrs -365 days to departure</p>
+                  <p>4-24 hours to departure</p></td>
+                  <td><p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+                  <p><i class="fa fa-inr" aria-hidden="true"></i>3000 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+                </tr>
+              </tbody>
+            </table>
+            <h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="fare-smldng right">Date change fee (per passenger)</span></h5>
+            
+<table class="bordered fare-reules">
+  <thead>
+    <tr>
+      <th>Sector</th>
+      <th>Date change Fee</th>
+      <th>&nbsp;</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DEL-GOI</td>
+      <td><p>24 hrs -365 days to departure</p>
+        <p>4-24 hours to departure</p></td>
+      <td><p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p>
+        <p><i class="fa fa-inr" aria-hidden="true"></i>2250 + <i class="fa fa-inr" aria-hidden="true"></i>300*</p></td>
+    </tr>
+  </tbody>
+</table>
+<h5 class="fare-sbhdng">* TravelEasy.com cancellation service fee <span class="right fare-smldng">Baggage allowance</span></h5>
+
+<table class="bordered fare-reules">
+  <thead>
+    <tr>
+      <th>Sector</th>
+      <th>Adult</th>
+      <th>Child</th>
+      <th>Infant</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DEL-GOI</td>
+      <td><p>0Kg</p></td>
+      <td>0Kg</td>
+      <td><p><i class="fa fa-inr" aria-hidden="true"></i>0Kg</p></td>
+    </tr>
+  </tbody>
+</table>
+                  
+                  
+               </div>
+            </div>
+         </div>
+      </div> 
+   
+      <!-- Start Page Loading -->
+      <div id="loader-wrapper"> </div>
+      <nav class="white" role="navigation">
+         <div class="nav-wrapper container">
+            <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn"><i class="material-icons">menu</i></a> <a id="logo-container" href="#" class="brand-logo"><img width="170" src="images/logo.svg" alt="traveleasy"></a>
+            <ul class="hide-on-med-and-down tp-nav nav-lft-spc">
+               <li><a href="#" class="active"><i class="fa fa-plane right-spc tinny"></i>Flight</a></li>
+               <li><a href="#"><i class="fa fa-gift right-spc tinny"></i>Offer</a></li>
+            </ul>
+            <ul class="right hide-on-med-and-down text-size2">
+               <li><a href="#"> <i class="fa fa-clock-o right-spc"></i>Easy Support</a></li>
+               <li>
+                  <a class = " dropdown-button padd0" href = "#" data-activates = "dropdown"> <i class="fa fa-user-circle-o right-spc"></i>Sign/SignUp<i class ="mdi-navigation-arrow-drop-down right"></i></a>
+                  <ul id= "dropdown" class ="dropdown-content">
+                     <li><a href="#!">one</a></li>
+                     <li><a href="#!">two</a></li>
+                     <li><a href="#!">three</a></li>
+                  </ul>
+               </li>
+            </ul>
+            <ul id="nav-mobile" class="side-nav">
+               <li><a href="#">Easy Support</a></li>
+               <li><a href="#">Sign/SignUp</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container hide-on-med-and-up tp-spc1">
+         <div class="row white spc-div bdr-div spc-rmv padd0 ">
+            <div class="col s12 m12 padd0 heador mobile-head">
+               <div class="col s2 m2 padd0"><span class="grey lighten-2"><i class="fa fa-arrow-left" aria-hidden="true"></i></span></div>
+               <div class="col s8 m8 padd0">
+                  <p class="center-align spc-div">Delhi <i class="fa fa-long-arrow-right" aria-hidden="true"></i> Mumbai</p>
+                  <p class="center-align"><i class="fa fa-plane" aria-hidden="true"></i> Fri, 23 Dec</p>
+               </div>
+               <div class="col s2 padd0 right-align"><span class="grey lighten-2"><i class="fa fa-filter fillterto" aria-hidden="true"></i></span></div>
+            </div>
+         </div>
+      </div>
+      <div class="container">
+         <div class="section">
+            <div class="row">
+            <div class="col s12 m12"> <!-- HORIZONTAL STEPPER -->
+  <div class="mdl-card mdl-shadow--2dp">
+    <div class="mdl-card__supporting-text">
+      <div class="mdl-stepper-horizontal-alternative">
+        <div id="stepper1" class="mdl-stepper-step editable-step">
+          <div class="mdl-stepper-circle"><span>1</span></div>
+          <div class="mdl-stepper-title">Review</div>
+          <div class="mdl-stepper-bar-left"></div>
+          <div class="mdl-stepper-bar-right"></div>
+        </div>
+        <div id="stepper2" class="mdl-stepper-step">
+          <div class="mdl-stepper-circle"><span>2</span></div>
+          <div class="mdl-stepper-title">TRAVELLERS</div>
+          
+          <div class="mdl-stepper-bar-left"></div>
+          <div class="mdl-stepper-bar-right"></div>
+        </div>
+        <div id="stepper3" class="mdl-stepper-step active-step ">
+          <div class="mdl-stepper-circle"><span>3</span></div>
+          <div class="mdl-stepper-title">Payment</div>
+          <div class="mdl-stepper-bar-left"></div>
+          <div class="mdl-stepper-bar-right"></div>
+        </div>
+        
+        <div id="stepper3" class="mdl-stepper-step">
+          <div class="mdl-stepper-circle"><span>4</span></div>
+          <div class="mdl-stepper-title">Confirmation</div>
+          <div class="mdl-stepper-bar-left"></div>
+          <div class="mdl-stepper-bar-right"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+   <!-- end HORIZONTAL STEPPER --></div>
+   
+   
+   
+               <div class="col s12 m9 lft-rmv right-rmv width-full-list box-spc-rmv">
+                  <h6>ITINERARY: New Delhi <i class="fa fa-exchange" aria-hidden="true"></i> Mumbai</h6>
+                  <div class="col s12 m12 white spc-div bdr-div spc-div-2 btm-spc spc-rmv-top">
+                     <div class="panel-heading-dbr spc-btm">
+                        <div class="col s9 m9 padd0">
+                           <h2 class="panel-title">New Delhi to Mumbai 18 Nov 2016, Fri</h2>
+                        </div>
+                        <div class="col s3 m3 padd0 right-align panel-sub txt-hover-efct"> 
+                        <a href="#modal1-farerule" class="modal-trigger">Fare Rules  </a> 
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col s12 m12 spc-div">
+                           <div class="col s2 m2 padd0">
+                              <p class="flightresult">
+                                 <span class="left right-spc">
+                                 <span class="AirLogo Al2_sm"></span>
+                                 </span>
+                                 <span class="flitname">IndiGo</span>
+                                 <br>
+                                 6E-96 &nbsp;
+                              </p>
+                           </div>
+                           <div class="col s2 m2 padd0 right-align">
+                              <p class="timeflir">New Delhi 05:30
+                                 <br>
+                                 <span class="hide-on-med-and-down">New Delhi
+                                 Indira Gandhi Airport (DEL)
+                                 </span>
+                                 <span class="hide-on-large-only">02h 10m</span>
+                              </p>
+                           </div>
+                           <div class="col s2 m2 padd0 center arrosec1">
+                              <img class="img-responsive img-cen hide-on-med-and-down tp-spc2" src="images/long-arrow.png">
+                              <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                           </div>
+                           <div class="col s2 m2 padd0 left-align">
+                              <p class="timeflir">05:30 Mumbai
+                                 <span class="hide-on-med-and-down">Mumbai Chhatrapati Shivaji Airport (BOM)
+                                 </span>
+                                 <span class="hide-on-large-only">Chhatrapati Shivaji Airport (BOM)
+                                 Chhatrapati Shivaji Airport (BOM)</span>
+                              </p>
+                           </div>
+                           <div class="col s2 m4 right-align">
+                              <p class="timeflir"> <i class="fa fa-inr"></i>02h 10m </p>
+                              <span class="nonstp">Non Stop</span>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="panel-heading-dbr spc-btm">
+                        <div class="col s9 m9 padd0">
+                           <h2 class="panel-title">New Delhi to Mumbai 18 Nov 2016, Fri</h2>
+                        </div>
+                        <div class="col s3 m3 padd0 right-align panel-sub txt-hover-efct"> 
+                         
+                        </div>
+                     </div>
+                     <div class="row">
+                        <div class="col s12 m12 spc-div">
+                           <div class="col s2 m2 padd0">
+                              <p class="flightresult">
+                                 <span class="left right-spc">
+                                 <span class="AirLogo Al2_sm"></span>
+                                 </span>
+                                 <span class="flitname">IndiGo</span>
+                                 <br>
+                                 6E-96 &nbsp;
+                              </p>
+                           </div>
+                           <div class="col s2 m2 padd0 right-align">
+                              <p class="timeflir">New Delhi 05:30
+                                 <br>
+                                 <span class="hide-on-med-and-down">New Delhi
+                                 Indira Gandhi Airport (DEL)
+                                 </span>
+                                 <span class="hide-on-large-only">02h 10m</span>
+                              </p>
+                           </div>
+                           <div class="col s2 m2 padd0 center arrosec1">
+                              <img class="img-responsive img-cen hide-on-med-and-down tp-spc2" src="images/long-arrow.png">
+                              <i class="fa fa-long-arrow-right hide-on-large-only" aria-hidden="true"></i>
+                           </div>
+                           <div class="col s2 m2 padd0 left-align">
+                              <p class="timeflir">05:30 Mumbai
+                                 <span class="hide-on-med-and-down">Mumbai Chhatrapati Shivaji Airport (BOM)
+                                 </span>
+                                 <span class="hide-on-large-only">Chhatrapati Shivaji Airport (BOM)
+                                 Chhatrapati Shivaji Airport (BOM)</span>
+                              </p>
+                           </div>
+                           <div class="col s2 m4 right-align ">
+                              <p class="timeflir"> <i class="fa fa-inr"></i>02h 10m </p>
+                              <span class="nonstp">Non Stop</span>
+                           </div>
+                           <div class="clearfix"></div>
+                           
+                           
+                        </div>
+                        
+                        
+                        
+                        <div class="col s12 m12 spc-div tp-bdr tp-spc1 tp-spc3">
+                           <p><b>Travellers: <i class="fa fa-user" aria-hidden="true"></i></b> Vinay Sisodiya</p>
+                        </div>
+                        
+                    
+                        
+                        
+                        
+                   
+                        
+                     </div>
+                  </div>
+                  <div class="col s12 m12 white spc-div bdr-div btm-spc">
+                     <ul class="safepay">
+<li><i class="fa fa-podcast" aria-hidden="true"></i> Easy to Use</li>
+<li><i class="fa fa-umbrella" aria-hidden="true"></i> Safe &amp; Secure Payment</li>
+<li><i class="fa fa-tag" aria-hidden="true"></i> Million Happy Customers</li>
+</ul>
+                     
+                  </div>
+                  
+                  <div class="col s12 m12 btm-spc padd0">
+                     <div class="col s12 m12 padd0">
+                        <p class="tername linH-spc4">CHOOSE PAYMENT MODE</p>
+                        Convenience fee will be charged based on payment mode<br><br>
+                     </div>
+                  </div>
+                  
+                  
+                  
+  <div class="col s12 m12 spc-div btm-spc padd0">
+
+    <div class="col s12 m3 right-rmv padd0">
+      <ul class="tabs tab-custom">
+                <li class="tab"><a href="#test1"  class="active"><i class="fa fa-credit-card" aria-hidden="true"></i>  <span class="hide-on-med-and-down"> Credit Card</span></a></li>
+                <li class="tab"><a href="#test2"><i class="fa fa-credit-card" aria-hidden="true"></i><span class="hide-on-med-and-down">Debit Card</span></a></li>
+                <li class="tab"><a href="#test3"><i class="fa fa-university" aria-hidden="true"></i><span class="hide-on-med-and-down">Net Banking</span></a></li>
+                <li class="tab"><a href="#test4"><i class="fa fa-money" aria-hidden="true"></i><span class="hide-on-med-and-down"> Debit + ATM Pin</span></a></li>
+                <li class="tab"><a href="#test5"><i class="fa fa-folder-open-o" aria-hidden="true"></i> <span class="hide-on-med-and-down">Easy Wallet</span></a></li>
+                <li class="tab"><a href="#test6"><i class="fa fa-mobile" aria-hidden="true"></i><span class="hide-on-med-and-down">Mobile Wallet</span></a></li>
+      </ul>
+    </div>
+    <div class="col s12 m9 padd0">
+      <div class="col tab-content white">
+      <form class="col s10 offset-s1">
+   <!-- TAB 1-->
+  <div class="row spc-rmv" id="test1" >
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD NUMBER (WE SUPPORT ALL MAJOR CARDS)</label>
+    </div>
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD HOLDER NAME (AS MENTIONED ON CARD)</label>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">EXPIRY DATE </label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Month</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">&nbsp;</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Year</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="input-field col s12 m4">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CVV</label>
+    </div>
+    <div class="col s12 m12 bx1">
+      <div class="col s12 m10 padd0 ">
+        <p class="form-group">
+          <input type="checkbox" id="chk1">
+          <label for="chk1">Save card details for next purchase</label>
+        </p>
+        <p class="text-size2">(We do not save CVV details) </p>
+      </div>
+      <div class="col s12 m2 padd0 tp-spc1">
+        <p class="text-size2 right-align"><a href="#">View Details</a></p>
+      </div>
+    </div>
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+   <!-- TAB 2-->
+  <div class="row spc-rmv" id="test2" >
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD NUMBER (WE SUPPORT ALL MAJOR CARDS)</label>
+    </div>
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD HOLDER NAME (AS MENTIONED ON CARD)</label>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">EXPIRY DATE </label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Month</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">&nbsp;</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Year</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="input-field col s12 m4">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CVV</label>
+    </div>
+    <div class="col s12 m12 padd0 bx1">
+      <div class="col s12 m10 padd0 ">
+        <p class="form-group">
+          <input type="checkbox" id="chk1">
+          <label for="chk1">Save card details for next purchase</label>
+        </p>
+        <p class="text-size2">(We do not save CVV details) </p>
+      </div>
+      <div class="col s12 m2 padd0 tp-spc1">
+        <p class="text-size2 right-align"><a href="#">View Details</a></p>
+      </div>
+    </div>
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+   <!-- TAB 3-->
+  <div class="row spc-rmv" id="test3" >
+    
+    
+    <div class="col s12 m12 padd0">
+      <label for="crole">Select Bank</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Select Bank</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+   <!-- TAB 4-->
+  <div class="row spc-rmv" id="test4" >
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD NUMBER (WE SUPPORT ALL MAJOR CARDS)</label>
+    </div>
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CARD HOLDER NAME (AS MENTIONED ON CARD)</label>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">EXPIRY DATE </label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Month</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="col s12 m4">
+      <label for="crole">&nbsp;</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Year</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    <div class="input-field col s12 m4">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">CVV</label>
+    </div>
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">PIN (ENTER ATM PIN CODE)  </label>
+    </div>
+    <div class="col s12 m12 padd0 bx1">
+      <div class="col s12 m10 padd0 ">
+        <p class="form-group">
+          <input type="checkbox" id="chk1">
+          <label for="chk1">Save card details for next purchase</label>
+        </p>
+        <p class="text-size2">(We do not save CVV details) </p>
+      </div>
+      <div class="col s12 m2 padd0 tp-spc1">
+        <p class="text-size2 right-align"><a href="#">View Details</a></p>
+      </div>
+    </div>
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+   <!-- TAB 5-->
+  <div class="row spc-rmv" id="test5" >
+    <div class="col s12 m12">
+      <label for="crole">Select Easy Wallet</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Select Easy Wallet</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    
+    
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">PIN (ENTER ATM PIN CODE)  </label>
+    </div>
+    
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+   <!-- TAB 6-->
+  <div class="row spc-rmv" id="test6" >
+    <div class="col s12 m12">
+      <label for="crole">Select Mobile Wallett</label>
+      <select class="browser-default valid" id="crole" name="crole" data-error=".errorTxt6" aria-required="true" aria-invalid="false">
+        <option value="" disabled="" selected="">Select Mobile Wallet</option>
+        <option value="1">Manager</option>
+        <option value="2">Developer</option>
+        <option value="3">Business</option>
+      </select>
+      <div class="input-field">
+        <div class="errorTxt6"></div>
+      </div>
+    </div>
+    
+    
+    <div class="input-field col s12 m12">
+      <input id="password" type="password" class="validate">
+      <label for="password" class="">PIN (ENTER ATM PIN CODE)  </label>
+    </div>
+    
+    <div class="col s12 m12 padd0">
+      <p class="text-size4 tp-spc1">Total Amount: <strong>4,901</strong></p>
+    </div>
+  </div>
+  <div class="row ">
+    <div class="col s12 m12 padd0">
+      <p class="form-group"><a class="btn-flat waves-effect waves-light blue darken-4 center-align white-text tp-spc1 spc-btm2 col s12">Make Payment</a></p>
+    </div>
+    <p class="text-size2 tp-spc1">You might be redirected to partner site to verify your credentials before we proceed to authorize your payment.</p>
+    <div class="col s12 m12 padd0">
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"></div>
+    <div class="col s12 m12 padd0 bx1">
+      <p class="form-group ">
+      <p class="text-size2">Guaranteed security and worry-free travel</p>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col s12 m12 padd0">
+      <div class="col s12 m10 padd0 text-size2">Your transaction is backed major commercial banks and your personal information is protected and kept private. We Guarantee conformity to international credit card payment standards and use the latest methods to protect your information. We ensure that all sensitive information is encrypted and safeguarded by the latest technology.</div>
+      <div class="col s12 m2 padd0 right-align"><img src="images/indigo.png" width="60"></div>
+       <div class="col s12 m12 padd0 tp-spc1">
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"> 
+      <img width="30" src="images/img.jpg"></div>
+    </div>
+  </div>
+</form>
+      </div>
+    </div>
+
+   </div>
+               </div>
+               <div class="col s12 m3 right-rmv">
+                  <h6>FARE SUMMARY</h6>
+                  <ul class="collapsible collapsible-accordion" data-collapsible="accordion">
+                     <li class="active" style="display:block">
+                        <div class="collapsible-header active fnt0-hglt2">GRAND TOTAL</div>
+                        <div class="collapsible-body center-align">
+                           <span>
+                              <h5><i class="fa fa-inr"></i> 200500</h5>
+                           </span>
+                        </div>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+      <!--Import jQuery before materialize.js--> 
+      <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+      <script type="text/javascript" src="js/materialize.min.js"></script> 
+      <script type="text/javascript" src="js/init.js"></script>
+   </body>
+</html>

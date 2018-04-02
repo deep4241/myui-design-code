@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+<head>
+<!--Import Google Icon Font-->
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+<!--Import materialize.css-->
+<link type="text/css" rel="stylesheet" href="css/style.css" media="screen,projection"/>
+<link type="text/css" rel="stylesheet" href="css/home-page.css" media="screen,projection"/>
+<!--Let browser know website is optimized for mobile-->
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>TravelEasy</title>
+</head>
+<body>
+<!-- STARTING PAGE LOADING -->
+<div id="loader-wrapper"> </div>
+<!-- NAV BAR -->
+<nav class="white" role="navigation">
+  <div class="nav-wrapper container"> <a href="#" data-activates="nav-mobile" class="button-collapse rmv-mrgn"><i class="material-icons">menu</i></a> <a id="logo-container" href="#" class="brand-logo"><img width="170" src="images/logo.svg" alt="traveleasy"></a>
+    <ul class="hide-on-med-and-down tp-nav nav-lft-spc">
+      <li><a href="#" class="active"><i class="fa fa-plane right-spc tinny"></i>Flight</a></li>
+      <li><a href="#"><i class="fa fa-gift right-spc tinny"></i>Offer</a></li>
+    </ul>
+    <ul class="right hide-on-med-and-down text-size2">
+      <li><a href="#"> <i class="fa fa-clock-o right-spc"></i>Easy Support</a></li>
+      <li> <a class = " dropdown-button padd0" href = "#" data-activates = "dropdown"> <i class="fa fa-user-circle-o right-spc"></i>Sign/SignUp<i class ="mdi-navigation-arrow-drop-down right"></i></a>
+        <ul id= "dropdown" class ="dropdown-content">
+          <li><a href="#!">one</a></li>
+          <li><a href="#!">two</a></li>
+          <li><a href="#!">three</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul id="nav-mobile" class="side-nav">
+      <li><a href="#">Easy Support</a></li>
+      <li><a href="#">Sign/SignUp</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- BOOKING ENGINE -->
+<div id="index-banner" class="parallax-container pattern-overlay">
+  <div class="pad-bottom">
+    <div class="container">
+      <div class="row">
+        <h4 class="header center white-text text-lighten-2 header_bold">Find the best flight deals</h4>
+        <div class="center">
+          <p class="header col s12 light white-text space_remove font_space">Book cheap Flight tickets at Lowest airfares at TravelEasy.com</p>
+        </div>
+      </div>
+      <div class="row spc-onewr">
+        <div class="section left btn_space oneway-retrn "> <a href="#" id="download-button" class="col l12 waves-effect waves-light btn primary white-text oneway-retrn">OneWay</a> </div>
+        <div class="section left btn_space oneway-retrn"> <a href="#" id="download-button" class="col l12 waves-effect waves-light btn primary  oneway-retrn active">Return</a>
+          <div class="amber darken-3 "></div>
+        </div>
+      </div>
+      <div class="parallax parallax-img"><img src="images/header.jpg" alt="Unsplashed background img 1" style="display: block; transform: translate3d(-50%, 260px, 0px);"></div>
+      <div class="row">
+        <form class="col s12 m12 l12 pad-eq">
+          <div class="input-field col s6 m2 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">location_on</i>
+            <input placeholder="New Delhi (DEL)" id="last_name" type="text" class="home_bannner " required>
+            <span class="highlight"></span>
+            <label for="first_name" class="active input-dsgn">Flying From</label>
+          </div>
+          <div class="arrow_col left hide-on-small-only hide-on-med-and-down"> <i class="material-icons dp48 icon_color">swap_horiz</i> </div>
+          <div class="input-field col s6 m2 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">location_on</i>
+            <input placeholder="Bangalore (BLR)" id="last_name" type="text" class="home_bannner" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Flying To</label>
+          </div>
+          <div class="input-field col s6 m2 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">date_range</i>
+            <input placeholder="16 Jan, Tue " id="last_name" type="text" class="home_bannner" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Depart</label>
+          </div>
+          <div class="input-field col s6 m2 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">date_range</i>
+            <input placeholder="20 Jan, Sat" id="last_name" type="text" class="home_bannner" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Return</label>
+            <i class="material-icons dp48 right icon_close icon_color">close</i> </div>
+          <div class="input-field col s12 m2 l2 srch-spc"> <i class="material-icons dp48 icon_loc left">person_outline</i>
+            <input placeholder="Traveller &amp; Class" id="last_name" type="text" class="home_bannner" required>
+            <span class="highlight"></span>
+            <label for="last_name" class="active input-dsgn">Traveller &amp; Class</label>
+          </div>
+          <div class="input-field col s12 m2 l2"> <a href="#"  class="waves-effect waves-light btn amber darken-3 black-text text_button col s12 tp-mrgn1">Search</a> </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- CUSTOMER SATISFACTION -->
+<div class="z-depth-1 white"> 
+  <div class="row container">
+    <div class="col s12 m4 l4 nt-right-bdr">
+      <div class="col s2 m3 l3"> <img src="images/icons/secure.png" alt="secure" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Secure incredible value</h5>
+        <p class="light banner_price text-black ">Best Price Guarantee</p>
+      </div>
+    </div>
+    <div class="col s12 m4 l4 nt-right-bdr">
+      <div class="col s2 m3 l3"> <img src="images/icons/booking.png" alt="booking" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Booking with ease</h5>
+        <p class="light banner_price text-black ">Booking With Ease</p>
+      </div>
+    </div>
+    <div class="col s12 m4 l4">
+      <div class="col s2 m3 l3"> <img src="images/icons/satisfication.png" alt="satisfication" class="icon_secure"></div>
+      <div class="col s10 m9 l9">
+        <h5 class="lighten-2 banner_three text-black">Customer Satisfaction</h5>
+        <p class="light banner_price text-black ">Superier Customer Service, 24/7</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- MIDDLE CONTENT START -->
+<div class="container">
+<div class="row">
+    <div class="col s12 m12 l12">
+      <div class="left promotion_space">
+        <h5 class="lighten-2 right Promotion">Promotions</h5>
+      </div>
+    </div>
+    
+    <div class="col s12 m6 l4">
+    <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/offer1.jpg">
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/offer2.jpg">
+        </div>
+        
+        
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/offer3.jpg">
+        </div>
+      </div>
+    </div>
+    
+    
+  </div>
+<div class="row">
+    <div class="col s12 m12 l12">
+      <div class="left promotion_space">
+        <h5 class="lighten-2 right Promotion">Top Flight Deals</h5>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+    <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr2.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr1.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr3.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+        <div class="col s12 m6 l4">
+    <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr2.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr1.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr3.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+        <div class="col s12 m6 l4">
+    <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr2.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr1.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    <div class="col s12 m6 l4">
+      <div class="card hoverable">
+        <div class="card-image waves-effect waves-block waves-light">
+          <img class="activator" src="images/ofr3.png">
+        </div>
+        <div class="card-content offer">
+          <span class="card-title activator grey-text text-darken-4 "><h2>Best Offer International Flight</h2><i class="material-icons right">more_vert</i></span>
+          <p> Fares from Delhi starting at</p>
+          <div class="offer-priz"> <i class="fa fa-inr" aria-hidden="true"></i> 4,901 </div>
+        </div>
+        <div class="card-reveal offer" style="display: none; transform: translateY(0px);">
+          <span class="card-title grey-text text-darken-4"><h2>Best Offer International Flight</h2><i class="material-icons right">close</i></span>
+          <p>Fares from Delhi starting at</p>
+        </div>
+      </div>
+    </div>
+    
+  </div>
+</div>
+<!-- SUBSCRIPTION START -->
+<div id="index-banner" class="parallax-container pattern-overlay">
+  <div class="pad-bottom">
+    <div class="container">
+      <div class="row Discount_space"  style="position:relative;z-index:2;">
+             <h5 class="center white-text Discount_size">Get Discount Vouchers, Secret Deals, Sales, Previews and much more!</h5>
+			
+			    <div class="col s12 m6 offset-m2">
+                <input type="data" class="black-text input_text" size="50" required placeholder="Enter email">
+                </div>
+				<div class="col s12 m2 left-align">
+                <a class="waves-effect waves-light btn-large light-blue darken-1 btn-spc">Sign UP</a>
+				</div>
+				</div>
+               
+       
+      <div class="parallax parallax-img" style="z-index:1"><img src="images/gift.png" alt="Unsplashed background img 1" style="display: block; transform:translate3d(-50.1%, 68px, 0px);"></div>
+      
+    </div>
+  </div>
+</div>
+<!-- FOOTER START -->
+<footer class="footer-fixed gradient-45deg-purple-deep-orange white footer_margin">
+	<div class="container">
+    <div class="section">
+      <div class="row">
+        <div class="col l2 m6 s6">
+		   <ul>
+		       <li class="black-text text_footer spc-btm">Company</li>
+     		   <li><a href="#" class="grey-text remove_line">About us</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Board Of Directors</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Press</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Investors</a></li> 
+                <li><a href="#" class="grey-text remove_line">About us</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Board Of Directors</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Press</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Investors</a></li> 
+               
+		   </ul>
+
+        </div>
+		
+        <div class="col l2 m6 s6">
+		   <ul>
+		       <li class="black-text text_footer spc-btm">Product &amp; Services</li>
+     		   <li><a href="#" class="grey-text remove_line">Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Holidays</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Holidays</a></li>
+                <li><a href="#" class="grey-text remove_line">Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Holidays</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Holidays</a></li>  
+		   </ul>
+        </div>
+		
+       <div class="col l2 m6 s6">
+          <h6 class="black-text text_footer"></h6>
+		   <ul>
+		       <li class="black-text text_footer spc-btm">Support</li>
+     		   <li><a href="#" class="grey-text remove_line">Contact</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Blog</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Contact</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Blog</a></li>
+                <li><a href="#" class="grey-text remove_line">Contact</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Blog</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Contact</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Blog</a></li>   
+		   </ul>
+        </div>
+		
+		<div class="col l2 m6 s6">
+		    <ul>
+			   <li class="black-text text_footer spc-btm">Policies &amp; Terms</li>
+     		   <li><a href="#" class="grey-text remove_line">CSR Policy</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Privacy Policy</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Terms of use</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Privacy Policy</a></li> 
+               <li><a href="#" class="grey-text remove_line">CSR Policy</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Privacy Policy</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Terms of use</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Privacy Policy</a></li> 
+		   </ul>
+        </div>
+		
+		<div class="col l2 m6 s6">
+		    <ul>
+			   <li class="black-text text_footer spc-btm">Top Domestic routes</li>
+     		   <li><a href="#" class="grey-text remove_line">Bangalore Mumbai Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Bangalore Pune flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Pune Delhi flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Chennai Goa flights</a></li> 
+                <li><a href="#" class="grey-text remove_line">Bangalore Mumbai Flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Bangalore Pune flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Pune Delhi flights</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Chennai Goa flights</a></li>  
+		   </ul>
+        </div>
+		
+		<div class="col l2 m6 s6">
+          
+		   <ul>
+		       <li class="black-text text_footer spc-btm">More Links</li>
+     		   <li><a href="#" class="grey-text remove_line">GoAir</a></li> 
+			   <li><a href="#" class="grey-text remove_line">SpiceJet</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Jet Airways</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Air India</a></li> 
+                 <li><a href="#" class="grey-text remove_line">GoAir</a></li> 
+			   <li><a href="#" class="grey-text remove_line">SpiceJet</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Jet Airways</a></li> 
+			   <li><a href="#" class="grey-text remove_line">Air India</a></li>  
+		   </ul>
+        </div>
+		
+      </div>
+    </div>
+	<div class="divider"></div>
+	
+		
+      <div class="row">
+        <div class="col l3 m12 s12 accept_card">
+		   <ul class="weAcceptFooter">
+		       <li class="black-text text_footer spc-btm">We Accept</li>
+     		   <li><i class="fa fa-cc-visa left icon-clr" title="Visa"></i></li> 
+			   <li><i class="fa fa-cc-mastercard left icon-clr" title="Master Card"></i></li> 
+			   <li><i class="fa fa-cc-amex left icon-clr" title="American Express"></i> </li> 
+			   <li><i class="fa fa-credit-card left icon-clr" title="American Express"></i> </li> 
+		   </ul>
+        </div>
+		
+        <div class="col l4 m12 s12 accept_card">
+		<div class="social-icons-footer">
+		    <ul class="weAcceptFooter">
+		       <li class="black-text text_footer spc-btm">Partner</li>
+     		   <li><i class="fa fa-cc-visa left icon-clr" title="Visa"></i></li> 
+			   <li><i class="fa fa-cc-mastercard left icon-clr" title="Master Card"></i></li> 
+			   <li><i class="fa fa-cc-amex left icon-clr" title="American Express"></i> </li> 
+			   <li><i class="fa fa-credit-card left icon-clr" title="American Express"></i> </li> 
+		    </ul>
+		</div>
+        </div>
+		
+        <div class="col l2 m12 s6 feedback_btn">
+          <h6 class="black-text text_footer spc-btm">Got Feedback</h6>
+		  <!--<a class="waves-effect waves-light btn indigo darken-4 white-text give_rating" >Give us a rating</a>-->
+		<button class="btn waves-effect waves-light give_rating fb-btn-clr" type="submit" name="action">Give us a rating</button>
+        </div>
+		<div class="col l3 m12 s12 accept_card">
+		<div class="social-icons-footer">
+		 <ul class="weAcceptFooter">
+		       <li class="black-text text_footer spc-btm">Connect with us</li>
+     		   <li class="left "><a href="#" target="_blank"><i class="fa fa-facebook fa-lg icon-clr"></i></a></li> 
+			   <li class="left"><a href="#" target="_blank"><i class="fa fa-twitter fa-lg icon-clr"></i></a></li> 
+			   <li class="left"><a href="#" target="_blank"><i class="fa fa-youtube fa-lg icon-clr"></i></a></li>
+               <li class="left"><a href="#" target="_blank"><i class="fa fa-instagram fa-lg icon-clr"></i></a></li>	
+               <li class="left"><a href="#" target="_blank"><i class="fa fa-google-plus fa-lg icon-clr"></i></a></li>			   
+		    </ul>
+      
+		  
+		</div>
+        </div>
+       </div>
+	   
+       </div>
+	   <div class="divider"></div>
+	
+	
+	 </footer>
+<div class="footer-copyright center lighten-3">
+<div class="container section"><span class="footer_text"> © 2016 <a class="blue-grey-text" href="#">TravelEasy.com</a> All rights reserved.</span></div>
+</div> 
+<!--Import jQuery before materialize.js--> 
+<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+<script type="text/javascript" src="js/materialize.js"></script> 
+<script type="text/javascript" src="js/materialize.min.js"></script> 
+<script type="text/javascript" src="js/init.js"></script>
+</body>
+</html>
